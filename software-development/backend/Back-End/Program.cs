@@ -17,6 +17,10 @@ builder.Services.AddDbContext<TodoItemContext>(opt =>
     opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
 );
 
+builder.Services.AddDbContext<TodoListContext>(opt =>
+    opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
+);
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
