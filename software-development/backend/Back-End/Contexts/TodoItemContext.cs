@@ -8,8 +8,6 @@ namespace Back_End.Contexts
         public TodoItemContext(DbContextOptions<TodoItemContext> options) : base(options) 
         { 
         }
-
-        public DbSet<TodoItem> TodoItems { get; set; } = null;
-
+        public DbSet<TodoItem> TodoItems { get; set; }
     }
 }

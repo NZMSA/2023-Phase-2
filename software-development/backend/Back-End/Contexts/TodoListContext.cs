@@ -5,11 +5,9 @@ namespace Back_End.Contexts
 {
     public class TodoListContext : DbContext
     {
-        public TodoListContext(DbContextOptions<TodoItemContext> options) : base(options) 
+        public TodoListContext(DbContextOptions<TodoListContext> options) : base(options) 
         { 
         }
-
-        public DbSet<TodoList> TodoItems { get; set; } = null;
-
+        public DbSet<TodoList> TodoList { get; set; }
     }
 }

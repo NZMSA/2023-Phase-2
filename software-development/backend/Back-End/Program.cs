@@ -1,4 +1,5 @@
-using Back_End.Contexts;
+﻿using Back_End.Contexts;
+using Back_End.Controllers;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +40,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapTodoListEndpoints();
+
+app.MapTodoItemEndpoints();
 
 app.Run();
