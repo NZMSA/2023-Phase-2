@@ -9,7 +9,8 @@ namespace Back_End.Contexts
         { 
         }
 
-        public DbSet<TodoList> TodoItems { get; set; } = null;
+        // how's about changing this name to TodoLists?
+        public DbSet<TodoList> TodoLists { get; set; } = null;
 
     }
 }
