@@ -6,6 +6,7 @@ export const api = createApi({
     reducerPath: 'api',
     baseQuery: fetchBaseQuery({ baseUrl: '/api' }),
     endpoints: (builder) => ({
+        // Todo item endpoints
         getAllTodoItems: builder.query({
             query: () => 'TodoItem',
         }),
@@ -35,10 +36,42 @@ export const api = createApi({
                 url: `TodoItem/${id}`,
                 method: 'DELETE',
             })
-        })
+        }),
+
+        // Todo list endpoints
+        getAllTodoLists: builder.query({
+            query: () => 'TodoList',
+        }),
+
+        getTodoListById: builder.query({
+            query: (id) => `TodoList/${id}`,
+        }),
+
+        updateTodoList: builder.mutation({
+            query: (todoList) => ({
+                url: `TodoList/${todoList.Id}`,
+                method: 'PUT',
+                body: todoList,
+            }),
+        }),
+
+        createTodoList: builder.mutation({
+            query: (todoList) => ({
+                url: 'TodoList',
+                method: 'POST',
+                body: todoList,
+            })
+        }),
+
+        deleteTodoList: builder.mutation({
+            query: (id) => ({
+                url: `TodoList/${id}`,
+                method: 'DELETE',
+            })
+        }),
     }),
 })
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetAllTodoItemsQuery, useGetTodoItemByIdQuery, useUpdateTodoItemMutation, useCreateTodoItemMutation, useDeleteTodoItemMutation } = api
+export const { useGetAllTodoItemsQuery, useGetTodoItemByIdQuery, useUpdateTodoItemMutation, useCreateTodoItemMutation, useDeleteTodoItemMutation, useGetAllTodoListsQuery, useGetTodoListByIdQuery, useUpdateTodoListMutation, useCreateTodoListMutation, useDeleteTodoListMutation } = api
