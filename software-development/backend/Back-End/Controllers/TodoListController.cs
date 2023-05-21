@@ -31,16 +31,20 @@ namespace Back_End.Controllers
 
             group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (int id, TodoList todoList, TodoListContext db) =>
             {
-                var affected = await db.TodoList
-                    .Where(model => model.Id == id)
-                    .ExecuteUpdateAsync(setters => setters
-                      .SetProperty(m => m.Id, todoList.Id)
-                      .SetProperty(m => m.Title, todoList.Title)
-                      .SetProperty(m => m.CreatedBy, todoList.CreatedBy)
-                      .SetProperty(m => m.DateCreated, todoList.DateCreated)
-                    );
+                var existingList = await db.TodoList.FindAsync(id);
 
-                return affected == 1 ? TypedResults.Ok() : TypedResults.NotFound();
+                if (existingList == null)
+                {
+                    return TypedResults.NotFound();
+                }
+
+                existingList.Title = todoList.Title;
+                existingList.CreatedBy = todoList.CreatedBy;
+                existingList.DateCreated = todoList.DateCreated;
+
+                await db.SaveChangesAsync();
+
+                return TypedResults.Ok();
             })
             .WithName("UpdateTodoList")
             .WithOpenApi();
@@ -56,11 +60,17 @@ namespace Back_End.Controllers
 
             group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (int id, TodoListContext db) =>
             {
-                var affected = await db.TodoList
-                    .Where(model => model.Id == id)
-                    .ExecuteDeleteAsync();
+                var existingList = await db.TodoList.FindAsync(id);
 
-                return affected == 1 ? TypedResults.Ok() : TypedResults.NotFound();
+                if (existingList == null)
+                {
+                    return TypedResults.NotFound();
+                }
+
+                db.TodoList.Remove(existingList);
+                await db.SaveChangesAsync();
+
+                return TypedResults.Ok();
             })
             .WithName("DeleteTodoList")
             .WithOpenApi();

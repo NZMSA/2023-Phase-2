@@ -1,4 +1,6 @@
-﻿namespace Back_End.Models
+﻿using System.Text.Json.Serialization;
+
+namespace Back_End.Models
 {
     public class TodoItem
     {
@@ -11,7 +13,8 @@
         public string Labels { get; set; }
         public string CreatedBy { get; set; }
         public ITEM_STATE State { get; set; }
-
+        [JsonIgnore]
+        public TodoList TodoList { get; set; }
     }
 
     public enum ITEM_STATE

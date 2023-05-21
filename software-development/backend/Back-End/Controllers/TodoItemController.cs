@@ -31,21 +31,25 @@ namespace Back_End.Controllers
 
             group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (int id, TodoItem todoItem, TodoItemContext db) =>
             {
-                var affected = await db.TodoItems
-                    .Where(model => model.Id == id)
-                    .ExecuteUpdateAsync(setters => setters
-                      .SetProperty(m => m.Id, todoItem.Id)
-                      .SetProperty(m => m.TodoListItemId, todoItem.TodoListItemId)
-                      .SetProperty(m => m.Title, todoItem.Title)
-                      .SetProperty(m => m.Content, todoItem.Content)
-                      .SetProperty(m => m.DateCreated, todoItem.DateCreated)
-                      .SetProperty(m => m.DateDue, todoItem.DateDue)
-                      .SetProperty(m => m.Labels, todoItem.Labels)
-                      .SetProperty(m => m.CreatedBy, todoItem.CreatedBy)
-                      .SetProperty(m => m.State, todoItem.State)
-                    );
+                var existingItem = await db.TodoItems.FindAsync(id);
 
-                return affected == 1 ? TypedResults.Ok() : TypedResults.NotFound();
+                if (existingItem == null)
+                {
+                    return TypedResults.NotFound();
+                }
+
+                existingItem.TodoListItemId = todoItem.TodoListItemId;
+                existingItem.Title = todoItem.Title;
+                existingItem.Content = todoItem.Content;
+                existingItem.DateCreated = todoItem.DateCreated;
+                existingItem.DateDue = todoItem.DateDue;
+                existingItem.Labels = todoItem.Labels;
+                existingItem.CreatedBy = todoItem.CreatedBy;
+                existingItem.State = todoItem.State;
+
+                await db.SaveChangesAsync();
+
+                return TypedResults.Ok();
             })
             .WithName("UpdateTodoItem")
             .WithOpenApi();

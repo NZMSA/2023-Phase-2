@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antho\\Source\\Repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj": {}
+    "C:\\Users\\antho\\source\\repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antho\\Source\\Repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj": {
+    "C:\\Users\\antho\\source\\repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antho\\Source\\Repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj",
+        "projectUniqueName": "C:\\Users\\antho\\source\\repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj",
         "projectName": "Back-End",
-        "projectPath": "C:\\Users\\antho\\Source\\Repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj",
+        "projectPath": "C:\\Users\\antho\\source\\repos\\2023-Phase-2\\software-development\\backend\\Back-End\\Back-End.csproj",
         "packagesPath": "C:\\Users\\antho\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\antho\\Source\\Repos\\2023-Phase-2\\software-development\\backend\\Back-End\\obj\\",
         "projectStyle": "PackageReference",
