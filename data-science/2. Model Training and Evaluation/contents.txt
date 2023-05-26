@@ -1,0 +1,28 @@
+1. Requirements - Python and Jupyter Notebook.
+2. Recommended - Conda setup.
+3. Set up - installing libraries. Use requirements.txt
+4. First steps- deciding on the type of model. Regression or classification.
+
+
+Now we are ready to train a model and predict the required solution. There are 60+ predictive modelling algorithms to choose from. We must understand the type of problem and solution requirement to narrow down to a select few models which we can evaluate. Our problem is a classification and regression problem. We want to identify relationship between output (Survived or not) with other variables or features (Gender, Age, Port...). 
+
+Depending on the problem in hand, our goal is to:
+1. Train and evaluate different models.
+2. Choose the best performing model and finetune the parameters.
+3. Evaluate the final results.
+
+Classification:
+
+We are also perfoming a category of machine learning which is called supervised learning as we are training our model with a given dataset. With these two criteria - Supervised Learning plus Classification and Regression, we can narrow down our choice of models to a few. These include:
+
+Logistic Regression
+KNN or k-Nearest Neighbors
+Support Vector Machines
+Naive Bayes classifier
+Decision Tree
+Random Forrest
+Perceptron
+Artificial neural network
+RVM or Relevance Vector Machine
+
+Regression:
