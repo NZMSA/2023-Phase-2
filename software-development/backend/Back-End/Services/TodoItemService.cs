@@ -20,7 +20,7 @@ namespace Back_End.Services
             return item;
         }
 
-        public async Task<TodoItem> GetTodoItem(int id)
+        public async Task<TodoItem> GetTodoItem(long id)
         {
             return await _itemContext.TodoItems.FindAsync(id);
         }
@@ -31,7 +31,7 @@ namespace Back_End.Services
             await _itemContext.SaveChangesAsync();
         }
 
-        public async Task DeleteTodoItem(int id) 
+        public async Task DeleteTodoItem(long id) 
         {
             var item = await _itemContext.TodoItems.FindAsync(id);
             _itemContext.TodoItems.Remove(item);
