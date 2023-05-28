@@ -1,4 +1,4 @@
-Section 1 - EDA and Data Preprocessing
+#Section 1 - EDA and Data Preprocessing
 
 Data scientists spend the majority of their time on data preparation tasks which should give you a clear idea of how important this process is to data analysis, data science, and machine learning.
 
