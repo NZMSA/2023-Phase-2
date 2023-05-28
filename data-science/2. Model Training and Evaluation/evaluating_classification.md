@@ -3,7 +3,7 @@ Now, let's recap. With some basic data cleaning, analysis and ML algorithms, you
 
 ## Determining a Baseline Accuracy
 
-Let's say you were working on the popular [Titanic Dataset](https://www.kaggle.com/competitions/titanic/overview) where you had to determine if a person onboard survived or not from various information like gender, age, marriage status, salary, etc. And, we wanted to know if our model that has an $80\\%$ accuracy is good or not. How would we do that?
+Let's say you were working on the popular [Titanic Dataset](https://www.kaggle.com/competitions/titanic/overview) and you had to determine if a person onboard survived or not using various information like gender, age, marriage status, salary, etc. And, we wanted to know if our model that has an $80\\%$ accuracy is good or not. How would we do that?
 
 We know that this is a binary classification problem and that there are two outcomes: the passenger survived or died. Similar to a coin flip problem where we have a 50-50 chance of getting right, we could do the same here and set $50\\%$ as the worst model performance. Anything lower, we could trash the model and use a coin instead.
 
