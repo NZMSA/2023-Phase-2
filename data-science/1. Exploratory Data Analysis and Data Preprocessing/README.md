@@ -68,14 +68,17 @@ Graphically:
 
 You are also to convert any columns to their appropriate types when required.
 
+
 #### 2. Cleaning the Dataset.
 Remove the missing values, outliers and irrelevant features from the dataset. 
+
 
 #### 3. Identify Correlated Variables.
 Finding a correlation between the variables. It will help you figure out how one variable is related others.
 
 Recommend:
 * Correlation Plot. 
+
 
 #### 4. Visualizing and Analyzing Results.
 
