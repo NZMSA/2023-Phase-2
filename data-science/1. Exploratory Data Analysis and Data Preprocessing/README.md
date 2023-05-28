@@ -29,8 +29,6 @@ Recommended Python package:
 ## Dataset list:
 
 #### Regression Problem 
-* [High school performance](https://archive.ics.uci.edu/ml/datasets/Student+Performance)
-* [Earthquake magnitude prediction](https://www.kaggle.com/datasets/kkhandekar/earthquakes-data-nz)
 * [Data science job salary](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023)
 * [Exam score prediction](https://www.kaggle.com/datasets/desalegngeb/students-exam-scores)
 
