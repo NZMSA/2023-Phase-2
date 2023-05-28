@@ -66,7 +66,7 @@ Numerically:
 Graphically:
 * Graphing any Numerical Sections of the dataset.
 
-You are also to convert any columns to their appropriate types when required.
+You also need to convert any columns to their appropriate types when required.
 
 
 ### 2. Cleaning the Dataset.
