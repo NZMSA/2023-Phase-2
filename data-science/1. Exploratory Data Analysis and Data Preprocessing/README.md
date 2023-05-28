@@ -41,7 +41,11 @@ pip install -r requirements.txt
 
 It is recommended to use a virtual environment. A `submission.ipynb` notebook is provided for your convenience.
 
-## Step one:
+## Task list:
+
+You need to complete the following task:
+
+* Finding all Variables and Understanding Them. 
 Before doing any processing on the data, it is essential that a data scientist has to know at least the general format of the data and the statistics of said data.
 
 You are expected to show at least the following without hard-coding the values:
@@ -49,15 +53,20 @@ You are expected to show at least the following without hard-coding the values:
 Numerically:
 - [ ] Average.
 - [ ] Standard Deviation.
-- [ ] Percentile range either:
-    - [ ] 10th and 90th or
-    - [ ] 25th and 75th.
 
 Graphically:
-- [ ] Correlation Plot.
 - [ ] Graphing any Numerical Sections of the dataset.
+
+You are also to convert any columns to their appropriate types when required.
+
+* Cleaning the Dataset. 
+
+* Identify Correlated Variables.
+- [ ] Correlation Plot. 
+
+* Visualizing and Analyzing Results.
+
+
 
 In addition:
 - [ ] Comment on the dataset that is provided to you based on the EDA.
-
-You are also to convert any columns to their appropriate types when required.
