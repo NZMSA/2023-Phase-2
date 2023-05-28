@@ -60,11 +60,11 @@ Before doing any processing on the data, it is essential that a data scientist h
 You are expected to show at least the following without hard-coding the values:
 
 Numerically:
-- [ ] Average.
-- [ ] Standard Deviation.
+* Average.
+* Standard Deviation.
 
 Graphically:
-- [ ] Graphing any Numerical Sections of the dataset.
+* Graphing any Numerical Sections of the dataset.
 
 You are also to convert any columns to their appropriate types when required.
 
@@ -75,7 +75,7 @@ Remove the missing values, outliers and irrelevant features from the dataset.
 Finding a correlation between the variables. It will help you figure out how one variable is related others.
 
 Recommend:
-- [ ] Correlation Plot. 
+* Correlation Plot. 
 
 ##### Visualizing and Analyzing Results.
 
