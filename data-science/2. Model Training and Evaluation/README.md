@@ -8,10 +8,19 @@ The structure of this section is as follows:
   - [Step 1: Choosing a model](#step0-choose-model)
   - [Step 2: Training and testing](#step2-train-models)
   - [Step 3: Evaluation](#step4-evaluation)
-  - [Step 4: Finetuning parameters](#step3-finetune)
+  - [Step 4: Finetuning](#step3-finetune)
 
+The goal of this part is to have:
+- Trained models using ```sklearn``` on the dataset that you have chosen.
+- Evaluated the model(s) on different metrics and summarising them in your notebook.
+- Explained the steps taken to make the model perform better.
 
-Before you start, it is highly recommended that you have a virtual environment is set up. Using [anaconda](https://docs.conda.io/en/latest/miniconda.html):
+You may choose to skip the guide as long as you complete the above.
+
+There are many good notebook examples in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) that you can take *inspiration* from. You can do this by selecting a dataset, then going to ```Code``` and then choosing among the most voted notebooks. You can learn a lot by reading these notebooks and you can have a good idea of what a good notebook looks like.
+
+## Setup
+Before you start, it is highly recommended that you have a virtual environment is set up. Using [anaconda](https://docs.conda.io/en/latest/miniconda.html), this is:
 ```bash
 conda create -n msa python=3.8 -y
 conda activate msa
@@ -74,17 +83,19 @@ Then, for classification, we can get a simple top-1 accuracy through:
 from sklearn.metrics import accuracy_score
 
 accuracy = accuracy_score(y_test, predictions)
+print(accuracy)
 ```
-For regression, we can do a simple Mean Square Error (MSE):
+If it's a regression problem, we can do a simple Mean Square Error (MSE):
 ```python
 from sklearn.metrics import mean_squared_error
 
 mse = mean_squared_error(y_test, predictions)
+print(mse)
 ```
 
-Now that you know how to train and test different models, try to repeat Step 1 and Step 2 with other models and compare their performances against each other.
+Now that you know how to train and test different models, try to repeat Step 1 and Step 2 with other models and compare their performances against each other. We will be doing an in-depth evaluation and finetuning on one model, so it's better if we choose the best tool from the start.
 
-Some algorithms that you could try but are not limited to, include:
+Below are some algorithms from the MSLearn modules that you should try.
 
 - Classification
   - Decision Tree
@@ -97,10 +108,68 @@ Some algorithms that you could try but are not limited to, include:
   - Lasso
   - Gradient Boosting Regression
   - Decision Tree Regression
-  - Neural Network Regression (Deep Learning)
+  - Neural Network Regression (Optional)
 
-Refer to sklearn's [modules](https://scikit-learn.org/stable/modules/classes.html) to import different ML algorithm classes. If you are interested in deep learning, you can complete the [MSLearn Deep Learning Module](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models/) to get more familiar with neural networks.
+Refer to sklearn's [modules documentation](https://scikit-learn.org/stable/modules/classes.html) for the different ML algorithms. Some models will need additional parameters when they are initialized. As a goal, try to evaluate at least 3 ML algorithms and create a table to show their accuracies on your dataset.
+
+If you are interested in deep learning, you can complete the [MSLearn Deep Learning Module](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models/) to get more understanding of neural networks.
 
 ## Step 3: Model Evaluation
+
+There are some evaluation metrics that only work on one type of models and not the other. You can find these from below:
+
+- [Evaluating Classification Models](https://github.com/NZMSA/2023-Phase-2/blob/data/model/data-science/2.%20Model%20Training%20and%20Evaluation/CLASSIFICATION.md)
+- [Evaluating Regression Models]
+
+### Cross Validation
+
+Many times, models achieve good results during testing but when they get deployed in the real world, they fail in an utterly miserable way. One of the main reasons that this happens is due to overfitting. This means that the model is great at "predicting" data that is has already seen, but terrible at predicting new data, which is not prediction at all. 
+
+Cross Validation is a way to truly get a sense of how a model performs by splitting the dataset $k$ times and then using switching the portion of the data that model trains on and is being tested upon each time. This way, we can avoid any *surprises* that may come up when we test our model in the real-world.
+
+Doing this is a little computationally expensive but ```sklearn``` makes it very simple to implement:
+
+#### For Classification Models
+```python
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold
+
+# Create a 5-fold cross-validation object
+cv = KFold(n_splits=5, shuffle=True, random_state=42)
+
+# Run the cross-validation on the model
+scores = cross_val_score(model, X, y, cv=cv)
+
+# Print the scores
+print("Cross-Validation Scores:", scores)
+```
+
+### For Regression Models
+Note for regression models, it is very similar with just an extra parameter for ```cross_val_score``` called scoring to state the metric being used. An example is given below:
+
+```python
+# Run the cross-validation on the model with -MSE
+scores = cross_val_score(model, X, y, cv=cv, scoring='neg_mean_squared_error')
+
+# Calculate the MSE mean and std
+mse_scores = -scores
+mean_mse = mse_scores.mean()
+std_mse = mse_scores.std()
+
+# Print MSE scores
+print("Mean MSE:", mean_mse)
+print("Standard Deviation of MSE:", std_mse)
+```
+
+Read this [documentation](https://scikit-learn.org/stable/modules/model_evaluation.html) for different ```scoring``` options.
+
+
+### ROC and AUC for Binary Classification
+
+
+
+
+
+
 
 
