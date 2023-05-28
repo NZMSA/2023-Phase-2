@@ -54,7 +54,7 @@ It is recommended to use a virtual environment. A `submission.ipynb` notebook is
 
 You need to complete the following task:
 
-#### Finding all Variables and Understanding Them. 
+##### Finding all Variables and Understanding Them. 
 Before doing any processing on the data, it is essential that a data scientist has to know at least the general format of the data and the statistics of said data.
 
 You are expected to show at least the following without hard-coding the values:
@@ -68,12 +68,16 @@ Graphically:
 
 You are also to convert any columns to their appropriate types when required.
 
-* Cleaning the Dataset. 
+##### Cleaning the Dataset.
+Remove the missing values, outliers and irrelevant features from the dataset. 
 
-* Identify Correlated Variables.
+##### Identify Correlated Variables.
+Finding a correlation between the variables. It will help you figure out how one variable is related others.
+
+Recommend:
 - [ ] Correlation Plot. 
 
-* Visualizing and Analyzing Results.
+##### Visualizing and Analyzing Results.
 
 
 
