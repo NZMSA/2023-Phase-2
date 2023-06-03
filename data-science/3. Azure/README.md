@@ -7,6 +7,7 @@ An Azure subscription. If you don't have an Azure subscription, [create a free a
 
 ## Getting Started:
 1. [Open Azure Machine Learning Studio](https://azure.microsoft.com/en-au/products/machine-learning)
+2. Create a new workplace
 
 
 ## Basic Requirements:
