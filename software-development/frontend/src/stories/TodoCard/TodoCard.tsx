@@ -1,5 +1,5 @@
 import { Close, Done, Share } from "@mui/icons-material";
-import { Avatar, Card, CardActions, CardContent, CardHeader, IconButton } from "@mui/material";
+import { Card, CardActions, CardContent, CardHeader, IconButton } from "@mui/material";
 
 export interface TodoCardProps {
     title : string,
