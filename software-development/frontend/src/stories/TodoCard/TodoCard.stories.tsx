@@ -39,13 +39,13 @@ export const TodoWithItem: Story = {
       const canvas = within(canvasElement);
 
       await step('Click Share', async () => {
-        await userEvent.click(canvas.getByLabelText('todo-card-share'));
+        await userEvent.click(canvas.getByTestId('todo-card-share'));
       });
       await step('Click Done', async () => {
-        await userEvent.click(canvas.getByLabelText('todo-card-done'));
+        await userEvent.click(canvas.getByTestId('todo-card-done'));
       });
       await step('Click Close', async () => {
-        await userEvent.click(canvas.getByLabelText('todo-card-close'));
+        await userEvent.click(canvas.getByTestId('todo-card-close'));
       });
     }
   };

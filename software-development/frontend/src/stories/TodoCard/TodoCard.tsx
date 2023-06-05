@@ -1,5 +1,5 @@
 import { Close, Done, Share } from "@mui/icons-material";
-import { Card, CardActions, CardContent, CardHeader, IconButton } from "@mui/material";
+import { Card, CardActions, CardContent, CardHeader, IconButton, styled } from "@mui/material";
 
 export interface TodoCardProps {
     title : string,
@@ -9,27 +9,31 @@ export interface TodoCardProps {
     //TODO: Add some user posting details here
 }
 
+const StyledCard = styled(Card)(({theme}) => ({
+    maxWidth: '500px'
+}));
+
 const TodoCard = ({title, description, cardItems} : TodoCardProps) => {
-    return (<Card>
+    return (<StyledCard>
         <CardHeader
             title={title}
             subheader={description}/>
         <CardContent>
             {cardItems}
         </CardContent>
-        <CardActions>
-            {/*TODO: Set up these actions correctly */}'
-            <IconButton className="todo-card-share">
-                <Share />
+        <CardActions sx={{alignContent: 'flex-end', justifyContent: 'end', alignSelf: 'end'}}>
+            {/*TODO: Set up these actions correctly */}
+            <IconButton >
+                <Share data-testid="todo-card-share"/>
             </IconButton>
-            <IconButton className="todo-card-done">
-                <Done />
+            <IconButton >
+                <Done  data-testid="todo-card-done"/>
             </IconButton>
-            <IconButton className="todo-card-close">
-                <Close />
+            <IconButton  >
+                <Close data-testid="todo-card-close"/>
             </IconButton>
         </CardActions>
-    </Card>)
+    </StyledCard>)
 }
 
 export { TodoCard };
