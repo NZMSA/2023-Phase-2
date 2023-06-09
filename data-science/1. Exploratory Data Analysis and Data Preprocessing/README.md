@@ -37,8 +37,6 @@ Recommended Python package:
 * [Credit risk prediction](https://www.kaggle.com/datasets/ppb00x/credit-risk-customers)
 * [Customer segmentation](https://www.kaggle.com/datasets/abisheksudarshan/customer-segmentation)
 
-
-
 ## Getting started:
 Install the following libraries as listed in `requirements.txt` via the command:
 
