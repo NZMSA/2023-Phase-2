@@ -66,7 +66,12 @@ You also need to convert any columns to their appropriate types when required.
 
 
 ### 2. Cleaning the Dataset.
+You need to explore data with NumPy and Pandas (As we learned from week module in phase 1).
 Remove the missing values, outliers and irrelevant features from the dataset. 
+
+### 3. Visualize data 
+Visualize data with Matplotlib in python (required). 
+Attempting to implement visualization using Power BI (optional). 
 
 
 ### 3. Identify Correlated Variables.
