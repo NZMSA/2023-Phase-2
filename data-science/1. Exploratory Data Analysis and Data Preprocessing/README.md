@@ -11,9 +11,9 @@ Data cleansing which is essentially dealing with missing values, outliers, and i
 
 In this section we will cover EDA and Data Preparation in order to prepare for the following Data Modelling sections. You need choose **two** datasets from the following dataset list and preprocess data in **both** of the following two datasets.
 
-The structure of this section is as follows:
+The step is as follows:
 
-  - [1. Finding all Variables and Understanding Them.](#step-0-splitting-the-dataset)
+  - [1. Finding all Variables and Understanding Them.](#Finding-all-Variables-and-Understanding-Them)
   - [Step 1: Choosing a model](#step-1-choosing-a-model)
   - [Step 2: Training and testing](#step-2-training-and-testing)
   - [Step 3: Evaluation](#step-3-model-evaluation)
