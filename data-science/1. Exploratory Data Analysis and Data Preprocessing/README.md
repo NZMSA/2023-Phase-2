@@ -13,11 +13,11 @@ In this section we will cover EDA and Data Preparation in order to prepare for t
 
 The gerenal steps of EDA and Data Preparation are as follows:
 
-  - [1. Finding all Variables and Understanding Them.](#1-Finding-all-Variables-and-Understanding-Them)
-  - [2. Cleaning the Dataset.](#2-Cleaning-the-Dataset)
-  - [3. Visualize data ](#3-Visualize-data )
+  - [1. Finding all Variables and Understanding Them](#1-Finding-all-Variables-and-Understanding-Them)
+  - [2. Cleaning the Dataset](#2-Cleaning-the-Dataset)
+  - [3. Visualize data](#3-Visualize-data )
   - [4. Identify Correlated Variables](#4-Identify-Correlated-Variables)
-  - [5. Analyzing Results and Summary Writing](5-Analyzing-Results-and-Summary-Writing)
+  - [5. Analyzing Results and Summary Writing](#5-Analyzing-Results-and-Summary-Writing)
 
 Finally, you should submit the follwing files:
 * Two .ipynb files (one for each dataset) with clear comments.
