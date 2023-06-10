@@ -11,7 +11,7 @@ Data cleansing which is essentially dealing with missing values, outliers, and i
 
 In this section we will cover EDA and Data Preparation in order to prepare for the following Data Modelling sections. You need choose **two** datasets from the following dataset list and preprocess data in **both** of the following two datasets.
 
-The gerenal steps of EDA and Data Preparation are as follows:
+The gerenal tasks of EDA and Data Preparation are as follows:
 
   - [1. Finding all Variables and Understanding Them](#1-Finding-all-Variables-and-Understanding-Them)
   - [2. Cleaning the Dataset](#2-Cleaning-the-Dataset)
