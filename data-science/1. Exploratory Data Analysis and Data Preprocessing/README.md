@@ -100,7 +100,8 @@ Following modules will support your work:
 
 ### 3. Visualize data 
 
-Visualize data with Matplotlib in python (required). 
+Now, visualisation of data is required to facilitate the identification of patterns and trends in large data sets.  
+Visualize data with ```Matplotlib``` in python (required). 
 
 ```python
 from matplotlib import pyplot as plt
