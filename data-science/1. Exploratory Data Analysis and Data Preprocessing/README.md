@@ -13,7 +13,7 @@ In this section we will cover EDA and Data Preparation in order to prepare for t
 
 The structure of this section is as follows:
 
-  - [Step 0: Splitting the dataset](#step-0-splitting-the-dataset)
+  - [1. Finding all Variables and Understanding Them.](#step-0-splitting-the-dataset)
   - [Step 1: Choosing a model](#step-1-choosing-a-model)
   - [Step 2: Training and testing](#step-2-training-and-testing)
   - [Step 3: Evaluation](#step-3-model-evaluation)
