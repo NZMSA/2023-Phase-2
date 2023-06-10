@@ -72,11 +72,7 @@ dataset = pd.read_csv("example.csv")
 dataset.head() 
 ```
 
-
-dataset = pd.read_csv("weather-data.csv")
-dataset.head() # Show the first five results.
-
-You are expected to show at least the following without hard-coding the values:
+You are also expected to show at least the following without hard-coding the values:
 
 Numerically:
 * Average.
