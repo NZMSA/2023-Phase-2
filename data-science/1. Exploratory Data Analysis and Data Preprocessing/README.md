@@ -11,13 +11,13 @@ Data cleansing which is essentially dealing with missing values, outliers, and i
 
 In this section we will cover EDA and Data Preparation in order to prepare for the following Data Modelling sections. You need choose **two** datasets from the following dataset list and preprocess data in **both** of the following two datasets.
 
-The step is as follows:
+The gerenal steps of EDA and Data Preparation are as follows:
 
   - [1. Finding all Variables and Understanding Them.](#1-Finding-all-Variables-and-Understanding-Them)
-  - [Step 1: Choosing a model](#step-1-choosing-a-model)
-  - [Step 2: Training and testing](#step-2-training-and-testing)
-  - [Step 3: Evaluation](#step-3-model-evaluation)
-  - [Step 4: Optimizing](#step-4-optimizing)
+  - [2. Cleaning the Dataset.](#2-Cleaning-the-Dataset)
+  - [3. Visualize data ](#3-Visualize-data )
+  - [4. Identify Correlated Variables](#4-Identify-Correlated-Variables)
+  - [5. Analyzing Results and Summary Writing](5-Analyzing-Results-and-Summary-Writing)
 
 Finally, you should submit the follwing files:
 * Two .ipynb files (one for each dataset) with clear comments.
@@ -82,14 +82,14 @@ Visualize data with Matplotlib in python (required).
 Attempting to implement visualization using Power BI (optional). 
 
 
-### 3. Identify Correlated Variables.
+### 4. Identify Correlated Variables.
 Finding a correlation between the variables. It will help you figure out how one variable is related others.
 
 Recommend:
 * Correlation Plot. 
 
 
-### 4. Visualizing and Analyzing Results.
+### 5. Analyzing Results and Summary Writing.
 
 
 
