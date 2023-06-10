@@ -62,7 +62,7 @@ You need to complete the following tasks:
 Before doing any processing on the data, it is essential that a data scientist has to know at least the general format of the data and the statistics of said data.
 
 Download the datasets in .csv format.
-Read and show it in ```python'''
+Read and show it in ```python```
 
 ```python
 # Read the dataset
