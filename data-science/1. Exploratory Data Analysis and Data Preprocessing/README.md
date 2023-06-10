@@ -100,8 +100,8 @@ Following modules will support your work:
 
 ### 3. Visualize data 
 
-visualisation of data is required to facilitate the identification of patterns and trends in large data sets.  
-Now, you need to visualize the dataset with ```Matplotlib``` in python (required). Refer to the [module](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 4 and 5
+Data visualisation is required to facilitate the identification of patterns and trends in large data sets.  
+Now, you need to visualize the dataset with ```Matplotlib``` in python (required). Refer to the [module](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 4 and 5. Start from the following code:
 
 ```python
 from matplotlib import pyplot as plt
