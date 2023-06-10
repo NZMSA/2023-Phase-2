@@ -118,13 +118,13 @@ Review [Explore and analyze data with Python](https://learn.microsoft.com/en-nz/
 
 
 Recommend:
-* You can also use Heatmap to plot the [**Correlation Matrix Correlation**](https://towardsdatascience.com/seaborn-heatmap-for-visualising-data-correlations-66cbef09c1fe). 
+* You can also use Heatmap to plot the [**Correlation Matrix**](https://towardsdatascience.com/seaborn-heatmap-for-visualising-data-correlations-66cbef09c1fe). 
 
 
 
 ### 5. Analyzing Results and Summary Writing.
+You must compose a summary describing your EDA and preprocessing procedures, along with your data comprehension.
 
 
-
-In addition: Please do not forget to comment your code.
+In addition: Please remember to comment on your code.
 
