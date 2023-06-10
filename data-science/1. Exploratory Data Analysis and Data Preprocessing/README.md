@@ -37,14 +37,12 @@ Recommended Python package:
 ## Dataset list:
 
 #### Regression Problem 
-* [Data science job salary](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023)
-* [Exam score prediction](https://www.kaggle.com/datasets/desalegngeb/students-exam-scores)
+* Data science job salary
+* Exam score prediction
 
 #### Classification Problem
-* [US census income](https://archive.ics.uci.edu/ml/datasets/Census+Income)
-* [Credit risk prediction](https://www.kaggle.com/datasets/ppb00x/credit-risk-customers)
-* [Customer segmentation](https://www.kaggle.com/datasets/abisheksudarshan/customer-segmentation)
-
+* Credit risk prediction
+* Customer segmentation
 ## Getting started:
 Install the following libraries as listed in `requirements.txt` via the command:
 
