@@ -114,7 +114,7 @@ Attempting to implement visualization using Power BI (optional). You can complet
 
 ### 4. Identify Correlated Variables.
 Finding a correlation between the variables. It will help you figure out how one variable is related others.
-Review [Explore and analyze data with Python](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/) - Unit 6 and 7. Learn about how to examine your data to identify any apparent relationships between variables.
+Review [Explore and analyze data with Python](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/) - Unit 6 and 7 and learn about how to examine your data to identify any apparent relationships between variables.
 
 
 Recommend:
@@ -124,6 +124,7 @@ Recommend:
 
 ### 5. Analyzing Results and Summary Writing.
 You must compose a summary describing your EDA and preprocessing procedures, along with your data comprehension.
+
 
 
 In addition: Please remember to comment on your code.
