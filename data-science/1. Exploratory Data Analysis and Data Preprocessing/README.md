@@ -61,6 +61,21 @@ You need to complete the following tasks:
 ### 1. Finding all Variables and Understanding Them 
 Before doing any processing on the data, it is essential that a data scientist has to know at least the general format of the data and the statistics of said data.
 
+Download the datasets in .csv format.
+Read and show it in ```python'''
+
+```python
+# Read the dataset
+dataset = pd.read_csv("example.csv")
+
+# Show the first five results
+dataset.head() 
+```
+
+
+dataset = pd.read_csv("weather-data.csv")
+dataset.head() # Show the first five results.
+
 You are expected to show at least the following without hard-coding the values:
 
 Numerically:
@@ -74,8 +89,18 @@ You also need to convert any columns to their appropriate types when required.
 
 
 ### 2. Cleaning the Dataset.
-You need to explore data with NumPy and Pandas (As we learned from week module in phase 1).
-Remove the missing values, outliers and irrelevant features from the dataset. 
+You must investigate data with NumPy and Pandas (As we learned from week modules in phase 1).
+Remove the missing values, outliers and irrelevant columns from the dataset.
+Since numerical inputs are optimal for computations, convert all text to numbers, you must convert all text into numbers.
+
+Following moudals will support your work:
+
+* [Explore and analyze data with Python](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 2 and 3
+
+* [Data collection and manipulation](https://learn.microsoft.com/en-nz/training/modules/collect-manipulate-data-python-nasa/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 5
+
+
+
 
 ### 3. Visualize data 
 Visualize data with Matplotlib in python (required). 
