@@ -87,9 +87,9 @@ You also need to convert any columns to their appropriate types when required.
 ### 2. Cleaning the Dataset.
 You must investigate data with NumPy and Pandas (As we learned from week modules in phase 1).
 Remove the missing values, outliers and irrelevant columns from the dataset.
-Since numerical inputs are optimal for computations, convert all text to numbers, you must convert all text into numbers.
+Since numerical inputs are optimal for computations, you must convert all text into numbers.
 
-Following moudals will support your work:
+Following modules will support your work:
 
 * [Explore and analyze data with Python](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 2 and 3
 
@@ -99,7 +99,15 @@ Following moudals will support your work:
 
 
 ### 3. Visualize data 
+
 Visualize data with Matplotlib in python (required). 
+
+```python
+from matplotlib import pyplot as plt
+```
+Refer to the [module](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 4 and 5
+
+
 Attempting to implement visualization using Power BI (optional). 
 
 
