@@ -101,7 +101,8 @@ Following modules will support your work:
 ### 3. Visualize data 
 
 Data visualisation is required to facilitate the identification of patterns and trends in large data sets.  
-Now, you need to visualize the dataset with ```Matplotlib``` in python (required). Refer to the [module](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 4 and 5. Start from the following code:
+Now, you need to visualize the dataset with ```Matplotlib``` in python (required). Refer to the [module](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50) - Unit 4 - 7. 
+Start from the following code:
 
 ```python
 from matplotlib import pyplot as plt
@@ -112,15 +113,18 @@ Attempting to implement visualization using Power BI (optional). You can complet
 
 
 ### 4. Identify Correlated Variables.
-Finding a correlation between the variables. It will help you figure out how one variable is related others.
+Finding a correlation between the variables. It will help you figure out how one variable is related others.
+Review [Explore and analyze data with Python](https://learn.microsoft.com/en-nz/training/modules/explore-analyze-data-with-python/) - Unit 6 and 7. Learn about how to examine your data to identify any apparent relationships between variables.
+
 
 Recommend:
-* Correlation Plot. 
+* You can also use Heatmap to plot the [**Correlation Matrix Correlation**](https://towardsdatascience.com/seaborn-heatmap-for-visualising-data-correlations-66cbef09c1fe). 
+
 
 
 ### 5. Analyzing Results and Summary Writing.
 
 
 
-In addition:
+In addition: Please do not forget to comment your code.
 
