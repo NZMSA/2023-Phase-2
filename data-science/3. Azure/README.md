@@ -14,7 +14,7 @@ Firstly, we need to setup Azure to host our machine learning model:
 
 1. Go to [Microsoft Azure portal page](https://azure.microsoft.com/en-us/get-started/azure-portal)
 
-
+![azure.portal](./images/portal_page.png)
 
 2. Look for the Machine Learning module/resource. You can easily find this by either using the search bar at the top or click the "+" button labelled "Create a resource"
 
