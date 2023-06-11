@@ -21,11 +21,10 @@ Firstly, we need to setup Azure to host our machine learning model:
 ![azure.machine.learning](./images/ML_page.png)
 
 
-3. Create the Machine Learning resource by filling in the details. 
-   1. NOTE: You can name things however you want, but just make sure they make sense to your project. 
-   2. NOTE: The region 
+3. Create the Machine Learning resource by filling in the details. Make sure you select the right region as **'Australia East'**. Other than that, you can name whatever they make sense to your project.
 
 
+![azure.workplace_details](./images/workplace_details_page.png)
 
 4. Click "Review + Create" and then it should take you to the deployment page. Once deployment, click "Go to Resource", which should take you to the resource page. From there, click launch studio.
 
