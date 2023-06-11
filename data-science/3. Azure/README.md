@@ -10,9 +10,9 @@ Feel free to take a look at [here](https://docs.microsoft.com/en-us/azure/machin
 3. ```pip install azureml-core```
 
 ## Getting Started:
-Firstly, we need to setup a cloud service to host our machine learning model:
+Firstly, we need to setup Azure to host our machine learning model:
 
-1. Go to the [Microsoft Azure portal page](https://azure.microsoft.com/en-us/get-started/azure-portal)
+1. Go to [Microsoft Azure portal page](https://azure.microsoft.com/en-us/get-started/azure-portal)
 
 
 
