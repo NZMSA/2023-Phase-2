@@ -1,6 +1,8 @@
 using Back_End.Contexts;
 using Back_End.Services;
 using Microsoft.EntityFrameworkCore;
+using NSwag;
+using NSwag.Generation.Processors.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +27,22 @@ builder.Services.AddDbContext<TodoListContext>(opt =>
 builder.Services.AddScoped<TodoListService>();
 
 // register the required Swagger services for NSwag
-builder.Services.AddSwaggerDocument();
+builder.Services.AddOpenApiDocument(document => 
+{
+    document.Title = "My Todo Api";
+    document.Version = "v1";
+    document.AddSecurity("Basic", Enumerable.Empty<string>(), new OpenApiSecurityScheme
+    {
+        Type = OpenApiSecuritySchemeType.Basic,
+        Name = "Authorization",
+        In = OpenApiSecurityApiKeyLocation.Header,
+        Description = "Input your username and password to access the API"
+    });
+
+    document.OperationProcessors.Add(
+        new AspNetCoreOperationSecurityScopeProcessor("Basic")
+    );
+});
 
 var app = builder.Build();
 
