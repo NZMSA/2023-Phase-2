@@ -1,9 +1,11 @@
 # Data Science Phase 2 Task 3
 
-Welcome to Phase 2 Task 3! Congratulations for making it so far. For this task, you will learn how data scientists use Azure Machine Learning to train a model. You can chose your prefered dataset in the list below 
+Welcome to Phase 2 Task 3! Congratulations for making it so far. Microsoft Azure is a cloud computing platform and service provided by Microsoft. For this task, you will learn how data scientists deploy machine learning models via the machine learning service in Microsoft's Azure.
 
 # Prerequisites
-An Azure account. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/en-us/free/) before you begin. Once you have your account ready, you are be entitled to use most services free for 12 months, including all the services that would be used in this task.
+1. An Azure account. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/en-us/free/) before you begin.
+2. Python or Anaconda
+3. pip install azureml-core
 
 ## Getting Started:
 [Open Azure Machine Learning Studio](https://azure.microsoft.com/en-au/products/machine-learning)
