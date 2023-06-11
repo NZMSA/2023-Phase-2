@@ -67,4 +67,138 @@ xgbClf.save_model("model.json")
 * [AI Global Index](https://www.kaggle.com/datasets/katerynameleshenko/ai-index)
 * [COVID -19 Coronavirus Pandemic Dataset](https://www.kaggle.com/datasets/whenamancodes/covid-19-coronavirus-pandemic-dataset)
 
-## Submission Requirements:
+
+## Model Deployment:
+
+Assuming that we have a fully trained machine learning model, we can deploy it in Python(you can decide either Jupter Notebook or local) or online through the Machine Learning Studio. Deploying via Python code is easier and more well documented, so I recommend you do that. 
+
+1. First we need the azureml-core Python module. Install this in a command window of your choice 
+
+   ```pip install azureml-core``` 
+
+2. Navigate to the azure portal and find the machine learning resource that you created earlier and download the ```config.json``` file. Save this to your working directory as we will need this config file to connect our machine learning workspace and deploy our model.
+
+![workspace.connect](./images/download_json.png)
+
+3. Connect to our workspace
+
+```python
+# Load workspace 
+from azureml.core import Workspace
+ws = Workspace.from_config(path = "config.json")
+print(ws)
+```
+If you run this code in Jupyter Notebook, it should open a web browser window where you have to sign-in to Azure. Follow the instructions there and you should see an output Workspace.create(...) if you connected successfully. 
+
+4. Register our model that we saved earlier with the appropriate model name 
+
+```python
+from azureml.core.model import Model
+
+# Register model
+model = Model.register(ws, model_name = "iris-xgboost", model_path = "model.json")
+```
+
+5. Registering the model merely uploads a model file onto the cloud, but there is no code/instructions to interface with it. We need to create an entry script file (scoring file) that will run when we receive data. This file should load the model, process the data and return the model's response to the client. ***The script is therefore specific to your model***. According to the documentation, the entry script requires two things:
+
+   1. Loading your model using a function called ```init()```
+   2. Running model on the input data using a function called ```run()```
+
+   For our iris example, we would do something like this 
+
+   ```python
+   # Load libraries 
+   import json
+   import os 
+   import numpy as np
+   from xgboost import XGBClassifier
+   
+   # Since model works with label encoded data, we can create a dictionary to get the acutal class names
+   classes = {0: "setosa", 1: "versicolor", 2: "virginica"}
+   
+   # 1. Requried init function
+   def init():
+       # Create a global variable for loading the model
+       global model
+       model = XGBClassifier(use_label_encoder = False)
+       model.load_model(os.path.join(os.getenv("AZUREML_MODEL_DIR"), "model.json"))
+   
+   # 2. Requried run function
+   def run(request):
+       # Receive the data and run model to get predictions 
+       data = json.loads(request)
+       data = np.array(data["data"])
+       res = model.predict(data)
+       return [classes.get(key) for key in res]
+   ```
+
+   ***For your project, you must be able to write an entry script that works specifically to your model.*** 
+
+6. After registering our model, we need to setup the remote virtual environment. Under the hood, Microsoft is creating a docker containing that contains our Python environment running our model. Interfacing with our model is achieved via REST API. 
+
+   1. We want the remote environment to have exactly the same Python versions/modules as our local machine. I have noticed that using the ```Environment.from_existing_conda_environment()``` method results in deployment errors, but is the easiest way so try this first.
+   2. If you are receiving deployment errors then try the second method which is to manually add packages as required.
+
+```python
+from azureml.core import Environment
+from azureml.core.conda_dependencies import CondaDependencies
+from azureml.core.model import InferenceConfig
+
+# 1. Create environment from existing conda environment 
+env = Environment.from_existing_conda_environment(name = "iris-xgboost",
+                                                conda_environment_name = "azure")
+
+# 2. Create environment 
+env = Environment(name = "iris-xgboost")
+conda_dep = CondaDependencies()
+conda_dep.add_conda_package("numpy")
+conda_dep.add_conda_package("xgboost")
+env.python.conda_dependencies = conda_dep
+
+dummy_inference_config = InferenceConfig(
+    environment = env,
+    source_directory = "./source_dir",
+    entry_script = "./echo_score.py",
+)
+```
+
+7. Now we are ready to deploy our model!
+
+```python
+from azureml.core.webservice import AciWebservice
+# NOTE: You may need more CPU or memeory depending on what kinds of model you end up using
+aci_config = AciWebservice.deploy_configuration(cpu_cores = 1, memory_gb = 1)
+service = Model.deploy(
+    ws,
+    "iris-xgboost",
+    [model],
+    dummy_inference_config,
+    aci_config,
+    overwrite = True,
+)
+service.wait_for_deployment(show_output = True)
+```
+
+Once the model has been deployed, you should be able to see it under the endpoints tab in the Azure ML studio.
+
+8. We can use any tool now to test our endpoint using REST API calls. If it returns data then you have successfully deployed and hosted your very first ML model! 
+
+For example, for testing in python:
+```python
+import requests
+import json
+
+uri = service.scoring_uri
+requests.get("http://16a75b9c-e6cc-47cd-89f6-215e077c43a9.australiaeast.azurecontainer.io/score")
+headers = {"Content-Type": "application/json"}
+data = {
+    "data": [[6.1, 2.8, 4.7, 1.2]],
+}
+data = json.dumps(data)
+response = requests.post(uri, data = data, headers = headers)
+print(response.json())
+```
+
+***NOTE: You may want to stop the container instance that hosts your model when not in use because it costs money to host the model.***
+
+***Just find the container instance of your model and press the stop button. You can press start whenever you want to use your model.***
