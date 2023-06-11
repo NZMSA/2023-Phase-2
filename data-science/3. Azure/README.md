@@ -26,7 +26,14 @@ Firstly, we need to setup Azure to host our machine learning model:
 
 ![azure.workplace_details](./images/workplace_details_page.png)
 
-4. Click "Review + Create" and then it should take you to the deployment page. Once deployment, click "Go to Resource", which should take you to the resource page. From there, click launch studio.
+4. Click 'Review + Create'. After validation, it would take you to the deployment page. It would take around 1 minute for the whole deployment process. Wait till it show **'Your deployment is complete'**.
+
+![azure.deployment_details](./images/deployment_ended.png)
+
+5. Click 'Go to resources' and then click 'Launch studio'. This would take you the Machine Learning studio, which is a visual development environment for creating, testing, and deploying machine learning models without extensive coding. It offers pre-built modules, a drag-and-drop interface, experiment tracking, collaboration features, and integration with other Azure services.
+
+![azure.studio_details](./images/ML_studio.png)
+
 
 ## Task steps:
 
