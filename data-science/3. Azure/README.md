@@ -202,3 +202,4 @@ print(response.json())
 ***NOTE: You may want to stop the container instance that hosts your model when not in use because it costs money to host the model.***
 
 ***Just find the container instance of your model and press the stop button. You can press start whenever you want to use your model.***
+
