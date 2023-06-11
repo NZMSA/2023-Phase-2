@@ -2,10 +2,12 @@
 
 Welcome to Phase 2 Task 3! Congratulations for making it so far. Microsoft Azure is a cloud computing platform and service provided by Microsoft. For this task, you will learn how data scientists deploy machine learning models via the machine learning service in Microsoft's Azure.
 
+Feel free to take a look at [here](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli) if you're not familiar with the concept of deployment in Azure.
+
 # Prerequisites
 1. An Azure account. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/en-us/free/) before you begin.
 2. Python or Anaconda
-3. pip install azureml-core
+3. ```pip install azureml-core```
 
 ## Getting Started:
 [Open Azure Machine Learning Studio](https://azure.microsoft.com/en-au/products/machine-learning)
