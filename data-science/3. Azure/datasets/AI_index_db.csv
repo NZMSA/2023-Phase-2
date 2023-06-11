@@ -1,0 +1,63 @@
+Country,Talent,Infrastructure,Operating Environment,Research,Development,Government Strategy,Commercial,Total score,Region,Cluster,Income group,Political regime
+United States of America,100.0,94.02,64.56,100.0,100.0,77.39,100.0,100.0,Americas,Power players,High,Liberal democracy
+China,16.51,100.0,91.57,71.42,79.97,94.87,44.02,62.92,Asia-Pacific,Power players,Upper middle,Closed autocracy
+United Kingdom,39.65,71.43,74.65,36.5,25.03,82.82,18.91,40.93,Europe,Traditional champions,High,Liberal democracy
+Canada,31.28,77.05,93.94,30.67,25.78,100.0,14.88,40.19,Americas,Traditional champions,High,Liberal democracy
+Israel,35.76,67.58,82.44,32.63,27.96,43.91,27.33,39.89,Middle East,Rising stars,High,Liberal democracy
+Singapore,39.38,84.3,43.15,37.67,22.55,79.82,15.07,38.67,Asia-Pacific,Rising stars,High,Electoral democracy
+South Korea,14.54,85.23,68.86,26.66,77.25,87.5,5.41,38.6,Asia-Pacific,Rising stars,High,Liberal democracy
+The Netherlands,33.83,81.99,88.05,25.54,30.17,62.35,4.97,36.35,Europe,Rising stars,High,Liberal democracy
+Germany,27.63,77.22,70.22,35.84,24.79,84.65,8.29,36.04,Europe,Traditional champions,High,Liberal democracy
+France,28.32,77.15,80.02,25.48,21.44,91.2,7.65,34.42,Europe,Traditional champions,High,Liberal democracy
+Australia,25.43,63.43,61.23,32.63,41.15,82.11,6.72,33.86,Asia-Pacific,Rising stars,High,Liberal democracy
+Ireland,29.93,89.5,70.15,16.79,30.85,69.44,3.94,33.04,Europe,Rising stars,High,Liberal democracy
+Finland,24.99,71.6,78.76,25.21,18.32,85.99,4.64,31.36,Europe,Rising stars,High,Liberal democracy
+Denmark,27.07,74.08,85.39,26.01,8.92,74.23,3.46,30.87,Europe,Rising stars,High,Liberal democracy
+Luxembourg,21.66,94.88,66.96,19.39,19.95,66.69,4.68,30.73,Europe,Waking up,High,Liberal democracy
+Japan,15.18,84.58,57.53,22.51,34.47,71.96,7.31,30.53,Asia-Pacific,Rising stars,High,Liberal democracy
+India,45.27,33.91,77.3,18.92,30.86,58.83,7.39,30.36,Asia-Pacific,Waking up,Lower middle,Electoral autocracy
+Switzerland,25.63,78.43,44.14,38.24,23.11,12.18,7.76,30.25,Europe,Rising stars,High,Liberal democracy
+Sweden,28.21,75.19,66.77,27.61,17.81,40.35,4.51,29.85,Europe,Waking up,High,Liberal democracy
+Hong Kong,17.56,96.11,59.5,31.51,8.63,33.29,5.3,29.11,Asia-Pacific,Waking up,High,Electoral democracy
+Spain,17.61,73.32,75.36,18.6,10.87,91.28,3.08,26.95,Europe,Rising stars,High,Liberal democracy
+Austria,16.97,64.49,76.3,23.56,17.81,72.14,3.08,26.89,Europe,Waking up,High,Electoral democracy
+Estonia,18.74,63.65,88.67,11.75,9.31,72.08,12.51,26.6,Europe,Waking up,High,Liberal democracy
+Taiwan,12.34,77.86,56.67,25.71,19.99,55.97,2.53,25.79,Asia-Pacific,Waking up,High,Liberal democracy
+Norway,27.61,76.2,36.65,21.18,13.56,59.05,3.95,25.77,Europe,Waking up,High,Liberal democracy
+Saudi Arabia,4.49,70.8,100.0,13.63,14.38,91.63,4.73,25.6,Middle East,Waking up,High,Closed autocracy
+Belgium,15.17,65.1,64.08,22.15,19.81,63.58,5.31,25.52,Europe,Waking up,High,Liberal democracy
+Poland,14.21,70.96,99.56,10.6,9.09,78.14,2.25,25.2,Europe,Waking up,High,Electoral democracy
+Slovenia,13.02,72.06,94.55,19.1,1.06,80.38,0.61,25.19,Europe,Waking up,High,Electoral democracy
+New Zealand,23.3,69.78,90.35,12.23,5.96,47.62,2.49,24.88,Asia-Pacific,Waking up,High,Liberal democracy
+Italy,11.09,64.76,83.25,20.3,14.66,61.43,2.64,24.45,Europe,Waking up,High,Liberal democracy
+Russia,12.46,62.59,52.85,14.21,19.48,90.4,1.38,21.99,Europe,Waking up,Upper middle,Electoral autocracy
+Malta,15.87,67.12,70.96,5.96,11.72,70.49,4.3,21.85,Europe,Waking up,High,Electoral democracy
+United Arab Emirates,2.65,79.16,72.12,5.13,15.53,81.38,3.22,21.17,Middle East,Waking up,High,Closed autocracy
+Portugal,13.43,64.2,80.66,8.96,3.92,70.69,2.05,20.89,Europe,Waking up,High,Electoral democracy
+Czech Republic,11.11,64.26,76.97,11.26,2.7,70.29,1.75,20.31,Europe,Waking up,High,Electoral democracy
+Iceland,18.45,72.45,41.19,18.29,0.19,22.15,5.74,19.81,Europe,Waking up,High,Liberal democracy
+Lithuania,14.3,63.19,80.67,3.22,6.18,64.28,1.77,19.59,Europe,Waking up,High,Electoral democracy
+Brazil,13.46,62.61,72.82,4.83,5.07,67.72,1.36,18.89,Americas,Waking up,Upper middle,Electoral democracy
+Greece,7.62,55.44,83.58,15.12,2.21,22.15,0.92,17.33,Europe,Waking up,High,Liberal democracy
+Slovakia,8.55,65.36,88.71,2.97,0.34,43.07,0.67,17.24,Europe,Waking up,High,Electoral democracy
+Hungary,10.34,69.17,58.01,4.31,5.4,55.01,1.08,17.0,Europe,Waking up,High,Electoral autocracy
+Malaysia,10.44,62.04,73.24,5.57,0.88,47.6,0.63,16.66,Asia-Pacific,Waking up,Upper middle,Electoral autocracy
+Mexico,1.72,41.85,97.03,8.11,4.46,54.21,0.78,15.48,Americas,Waking up,Upper middle,Electoral democracy
+Chile,10.56,61.97,56.73,1.49,0.67,60.5,2.95,15.33,Americas,Waking up,High,Liberal democracy
+Argentina,8.4,56.15,75.95,1.25,3.19,54.94,0.34,15.24,Americas,Waking up,Upper middle,Electoral democracy
+Qatar,0.0,67.97,62.58,11.94,0.0,33.49,0.0,14.66,Middle East,Waking up,High,Closed autocracy
+Turkey,8.49,40.74,64.34,9.53,1.02,67.45,0.95,14.39,Europe,Waking up,High,Electoral democracy
+Colombia,4.97,54.8,62.37,0.0,0.89,85.29,0.5,13.85,Americas,Waking up,Upper middle,Electoral democracy
+Uruguay,7.28,58.77,70.75,0.73,0.26,30.92,0.43,13.27,Americas,Waking up,High,Liberal democracy
+Bahrain,4.99,60.39,60.9,2.53,0.0,17.72,0.24,11.79,Middle East,Waking up,High,Closed autocracy
+Vietnam,6.34,55.76,37.61,2.03,0.3,68.86,0.31,11.62,Asia-Pacific,Waking up,Lower middle,Closed autocracy
+Indonesia,5.51,47.52,51.18,0.98,3.52,59.99,0.91,11.47,Asia-Pacific,Waking up,Lower middle,Electoral democracy
+Tunisia,8.94,38.59,62.32,3.9,0.0,12.18,0.15,9.87,Africa,Waking up,Lower middle,Electoral democracy
+South Africa,4.61,45.73,58.43,0.83,7.52,0.0,2.03,9.71,Africa,Waking up,Upper middle,Electoral democracy
+Morocco,3.36,44.88,60.17,1.46,0.05,15.9,0.1,8.87,Africa,Waking up,Lower middle,Closed autocracy
+Armenia,6.69,37.84,58.4,0.28,0.33,14.4,1.37,8.49,Europe,Waking up,Upper middle,Electoral democracy
+Sri Lanka,6.27,34.64,35.79,0.12,0.95,35.57,0.09,6.62,Asia-Pacific,Nascent,Lower middle,Electoral democracy
+Egypt,1.11,38.84,0.0,2.08,1.54,68.72,0.31,4.83,Middle East,Nascent,Lower middle,Electoral autocracy
+Kenya,0.75,14.11,29.84,0.07,12.15,7.75,0.31,2.3,Africa,Nascent,Lower middle,Electoral autocracy
+Nigeria,2.74,0.0,50.1,0.45,2.06,7.75,0.33,1.38,Africa,Nascent,Lower middle,Electoral autocracy
+Pakistan,8.0,2.43,12.48,2.17,1.09,13.92,0.27,0.0,Asia-Pacific,Nascent,Lower middle,Electoral autocracy

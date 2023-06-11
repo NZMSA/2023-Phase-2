@@ -2,8 +2,6 @@
 
 Welcome to Phase 2 Task 3! Congratulations for making it so far. Microsoft Azure is a cloud computing platform and service provided by Microsoft. For this task, you will learn how data scientists deploy machine learning models via the machine learning service in Microsoft's Azure.
 
-Feel free to take a look at [here](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli) if you're not familiar with the concept of deployment in Azure.
-
 # Prerequisites
 1. An Azure account. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/en-us/free/) before you begin.
 2. Python or Anaconda
@@ -35,13 +33,38 @@ Firstly, we need to setup Azure to host our machine learning model:
 ![azure.studio_details](./images/ML_studio.png)
 
 
-## Task steps:
+## Model Training:
 
+Before we deploy our model we would first need to train one. In this example, I trained a XGBoost model on the well known iris dataset. 
 
+For task 3, you are allowed to choose one dataset to train in the dataset list. If you are stuck you can access the [Official Microsoft Documentation](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli) which will guide you to deploying any type of machine learning model.
 
-## Datasets lists:
+Feel free to use this sample code and practice how to train a model then deploy it :)
 
+```python
+# Example model training on the iris dataset 
+# Load libraries for creating a xgboost model of the iris dataset 
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from xgboost import XGBClassifier
 
+# Load the data 
+iris = datasets.load_iris() 
+X = iris.data                
+y = iris.target      
 
+# Split data into test and train 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
+
+# Create XGBoost classifier and save model 
+xgbClf = XGBClassifier(use_label_encoder = False)
+xgbClf.fit(X_train, y_train)
+xgbClf.save_model("model.json")
+```
+
+## Datasets list:
+* [Best Songs on Spotify for every year (2000-2023)](https://www.kaggle.com/datasets/conorvaneden/best-songs-on-spotify-for-every-year-2000-2023)
+* [AI Global Index](https://www.kaggle.com/datasets/katerynameleshenko/ai-index)
+* [COVID -19 Coronavirus Pandemic Dataset](https://www.kaggle.com/datasets/whenamancodes/covid-19-coronavirus-pandemic-dataset)
 
 ## Submission Requirements:
