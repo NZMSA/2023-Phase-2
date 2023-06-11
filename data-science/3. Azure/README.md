@@ -10,15 +10,26 @@ Feel free to take a look at [here](https://docs.microsoft.com/en-us/azure/machin
 3. ```pip install azureml-core```
 
 ## Getting Started:
-[Open Azure Machine Learning Studio](https://azure.microsoft.com/en-au/products/machine-learning)
+Firstly, we need to setup a cloud service to host our machine learning model:
+
+1. Go to the [Microsoft Azure portal page](https://azure.microsoft.com/en-us/get-started/azure-portal)
+
+
+
+2. Look for the Machine Learning module/resource. You can easily find this by either using the search bar at the top or click the "+" button labelled "Create a resource"
+
+
+
+3. Create the Machine Learning resource by filling in the details. 
+   1. NOTE: You can name things however you want, but just make sure they make sense to your project. 
+   2. NOTE: The region 
+
+
+
+4. Click "Review + Create" and then it should take you to the deployment page. Once deployment, click "Go to Resource", which should take you to the resource page. From there, click launch studio.
 
 ## Task steps:
-1. Create a new workplace
-2. Create a compute instance. If you're not familiar on how to do this, direct to [here](https://learn.microsoft.com/zh-cn/azure/machine-learning/quickstart-create-resources?view=azureml-api-2)
-3. Create a notebook
-4. Connect to Azure Machine Learning workspace
-6. Import your dataset to data
-7. Set compute target
+
 
 
 ## Datasets lists:
