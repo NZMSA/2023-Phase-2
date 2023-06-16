@@ -84,10 +84,10 @@ For each task, we will be making sure that you have done some key things, as lis
     
 - Data selection and understanding
     - You have read in your chosen datasets appropriately and imported the corect packages
-    - You have demonstrated a good understanding of your chosen datasets, by showing and/or analysing (but not limited to) these things:
+    - You have demonstrated a good understanding of your chosen datasets, by showing, analysing, or correctly calculating (but not limited to) the following:
         - number of instances and features
         - data types of each column
-        - expected values
+        - values such as the mean and standard deviation
 - Data visualisation
     - Using Matplotlib (or other commonly used Python library), you have used appropriate data visualisation techniques for each dataset (as taught in the Microsoft Learn modules) to explore the data and identify any trends, patterns, or anomalies
 - Data cleaning
