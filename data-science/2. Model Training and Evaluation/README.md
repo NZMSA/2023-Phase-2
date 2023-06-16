@@ -10,17 +10,21 @@ The structure of this section is as follows:
   - [Step 3: Evaluation](#step-3-model-evaluation)
   - [Step 4: Optimizing](#step-4-optimizing)
 
-The goal of this part is to have:
-- Trained models using ```sklearn``` on the dataset that you have chosen.
-- Evaluated the model(s) on different metrics and summarising them in your notebook.
-- Explained the steps taken to make the model perform better.
+The goal of this part is to:
+- Split the data correctly with the parameters provided. 
+- Choose two models that fit the problem. 
+- Train and test the two chosen models on the preprocessed dataset from section 1.
+- Compare the model performances graphically using an evaluation method with cross-validation.
+- Optimize the model(s) in at least one way.
+- Summarize any improvements made.
+- Conclude with key findings about the data or the next steps to improve the model. 
 
-You may choose to skip the guide as long as you complete the above.
+You may choose to skip the guide as long as you complete the above. You can get started using the [skeleton notebook],(https://github.com/NZMSA/2023-Phase-2/blob/DS/section2---Sadat/data-science/2.%20Model%20Training%20and%20Evaluation/submission.ipynb) ```submission. ipynb``` provided in this folder.
 
-There are many good notebook examples in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) that you can take *inspiration* from. You can do this by selecting a dataset, then going to ```Code``` and then choosing among the most voted notebooks. You can learn a lot by reading these notebooks and you can have a good idea of what a good notebook looks like.
+There are many good notebook examples in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) that you can take *inspiration* from. You can do this by selecting a dataset, then going to ```Code``` and choosing among the most voted notebooks. You can learn a lot by reading these notebooks, and you can have a good idea of what a good notebook looks like.
 
 ## Setup
-Before you start, it is highly recommended that you have a virtual environment is set up. Using [anaconda](https://docs.conda.io/en/latest/miniconda.html), this is:
+Before you start, it is highly recommended that you have a virtual environment set up. Using [anaconda](https://docs.conda.io/en/latest/miniconda.html), this is:
 ```bash
 conda create -n msa python=3.8 -y
 conda activate msa
@@ -167,7 +171,7 @@ Read this [documentation](https://scikit-learn.org/stable/modules/model_evaluati
 
 
 ## Step 4: Optimizing
-After you have evaluated your model on the dataset, you probably have found out some areas that you can work on. If you have not, don't worry. Optimizing is an iterative process. Below are some ways you can get started. Note: You don't have to do them all. Just choose the ones that you think are most appropriate for your model.
+After you have evaluated your model on the dataset, you probably have found some areas that you can work on. If you have not, don't worry. Optimizing is an iterative process. Below are some ways you can get started. Note: You don't have to do them all. Just choose the ones that you think are most appropriate for your model.
 
 #### Data Preprocessing and Feature Selection
 - You could go back to [preprocessing](https://www.geeksforgeeks.org/data-preprocessing-in-data-mining/) and check to see if you could handle missing values, outliers, and categorical variables more appropriately. Ask yourself if you are dropping any features that might be useful. Maybe, some features need one-hot encoding or scaling. Experiment to see if they make a difference.
