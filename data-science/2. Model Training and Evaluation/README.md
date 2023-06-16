@@ -10,6 +10,12 @@ The structure of this section is as follows:
   - [Step 3: Evaluation](#step-3-model-evaluation)
   - [Step 4: Optimizing](#step-4-optimizing)
 
+
+You may choose to skip the guide as long as you complete the [requirements](https://github.com/NZMSA/2023-Phase-2/edit/DS/section2---Sadat/data-science/2.%20Model%20Training%20and%20Evaluation/README.md#requirements) below. You can get started using the [skeleton notebook](https://github.com/NZMSA/2023-Phase-2/blob/DS/section2---Sadat/data-science/2.%20Model%20Training%20and%20Evaluation/submission.ipynb), ```submission. ipynb``` provided in this folder.
+
+There are many good notebook examples in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) that you can take *inspiration* from. You can do this by selecting a dataset, then going to ```Code``` and choosing among the most voted notebooks. You can learn a lot by reading these notebooks, and you can have a good idea of what a good notebook looks like.
+
+## Success Criteria
 The goal of this part is to:
 - Split the data correctly with the parameters provided. 
 - Choose two models that fit the problem. 
@@ -18,10 +24,6 @@ The goal of this part is to:
 - Optimize the model(s) in at least one way.
 - Summarize any improvements made.
 - Conclude with key findings about the data or the next steps to improve the model. 
-
-You may choose to skip the guide as long as you complete the above. You can get started using the [skeleton notebook],(https://github.com/NZMSA/2023-Phase-2/blob/DS/section2---Sadat/data-science/2.%20Model%20Training%20and%20Evaluation/submission.ipynb) ```submission. ipynb``` provided in this folder.
-
-There are many good notebook examples in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) that you can take *inspiration* from. You can do this by selecting a dataset, then going to ```Code``` and choosing among the most voted notebooks. You can learn a lot by reading these notebooks, and you can have a good idea of what a good notebook looks like.
 
 ## Setup
 Before you start, it is highly recommended that you have a virtual environment set up. Using [anaconda](https://docs.conda.io/en/latest/miniconda.html), this is:
