@@ -1,6 +1,6 @@
-python==3.11.0
-numpy
 matplotlib
-seaborn
+numpy
 pandas
+python==3.11.0
 scikit-learn
+seaborn
