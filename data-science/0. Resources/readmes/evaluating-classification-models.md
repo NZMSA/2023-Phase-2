@@ -51,3 +51,27 @@ print(cr)
 Depending on the problem, we can choose to give more emphasis on precision or recall. For example, here we would have given more emphasis on Precision for ```disease = 1``` because we would certainly not want to diagnose a patient with not having the disease when in reality, they actually have it. 
 
 This directly links to [ROC and AUC curves](https://learn.microsoft.com/en-nz/training/modules/optimize-model-performance-roc-auc/) where we tune our hyperparameters to put emphasis on one or the other, depending on our problem.
+
+
+
+
+
+
+
+### For Classification Models
+```python
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold
+
+# Create a 5-fold cross-validation object
+cv = KFold(n_splits=5, shuffle=True, random_state=42)
+
+# Run the cross-validation on the model
+scores = cross_val_score(model, X, y, cv=cv)
+
+# Print the scores
+print("Cross-Validation Scores:", scores)
+```
+
+
+[Scikit-learn model evaluation methods](https://scikit-learn.org/stable/modules/model_evaluation.html)

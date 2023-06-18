@@ -68,3 +68,29 @@ print("Mean Absolute Error:", mae)
 <br>
 
 For MSE, RMSE and MAE, the lower the value the better it is for our predictions.
+
+
+
+
+
+
+
+### For Regression Models
+Note for regression models, it is very similar with just an extra parameter for ```cross_val_score``` called scoring to state the metric being used. An example is given below:
+
+```python
+# Run the cross-validation on the model with -MSE
+scores = cross_val_score(model, X, y, cv=cv, scoring='neg_mean_squared_error')
+
+# Calculate the MSE mean and std
+mse_scores = -scores
+mean_mse = mse_scores.mean()
+std_mse = mse_scores.std()
+
+# Print MSE scores
+print("Mean MSE:", mean_mse)
+print("Standard Deviation of MSE:", std_mse)
+```
+
+
+[Scikit-learn model evaluation methods](https://scikit-learn.org/stable/modules/model_evaluation.html)
