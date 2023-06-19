@@ -1,5 +1,6 @@
 using Back_End.Contexts;
 using Back_End.Services;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using NSwag;
 using NSwag.Generation.Processors.Security;
@@ -25,6 +26,13 @@ builder.Services.AddDbContext<TodoListContext>(opt =>
     opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
 );
 builder.Services.AddScoped<TodoListService>();
+
+builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddAuthentication("BasicAuthentication")
+    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+
+builder.Services.AddAuthorization();
 
 // register the required Swagger services for NSwag
 builder.Services.AddOpenApiDocument(document => 
@@ -57,6 +65,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
