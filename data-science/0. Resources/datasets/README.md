@@ -19,3 +19,8 @@ Data science job salaries
 ### Exam Scores (exam_scores.csv)
 
 Student exam score prediction
+
+
+With bullet points, mention features in data like this:
+- Some feature: This feature is the amount (unit) a user spends.
+- Some other feature: This feature is the amount (unit) the user buys.
