@@ -78,7 +78,7 @@ If you would like to extend yourself (and potentially attain a mark greater than
     - K-nearest neighbours
     - Lasso regression
     - Gradient boosting
-    - Neural network (refer to this Microsoft Learn module for more information: [Train and evaluate deep learning models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models))
+    - Neural network (refer to [Training Neural Nets](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models) for more information)
 
 Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters. If you decide to do this bonus task, show the performance of each model in your notebook.
 
@@ -124,7 +124,7 @@ For each task, we will be making sure that you have met the criteria below.
 ## Tips
 
 This part relies heavily on the Microsoft Learn modules from Weeks 3 and 4 of Phase 1! Below are some resources that you might find helpful:
-  - [Scikit-Learn Model Cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf))
+  - [Scikit-Learn Model Cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
   - Testing a model:
     ```python
     # Classification
