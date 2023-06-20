@@ -14,7 +14,7 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
   2. [Visualise data](#2-Visualise-data)
   3. [Clean data](#3-Clean-data)
   4. [Identify correlated variables](#4-Identify-correlated-variables)
-  5. [Summary]
+  5. [Summary](#5-Summary)
 
 ### 1. Find all variables and understand them
 
@@ -86,7 +86,7 @@ For each task, we will be making sure that you have met the criteria below.
     - You have used appropriate data visualisation techniques for each dataset (as taught in the Microsoft Learn modules) to explore the data and identify any trends, patterns, or anomalies
 - Clean data
     - You have dealt with outlier, missing values, and non-significant features
-    - You have converted non-numerical columns to numerical ones
+    - You have converted non-numerical and categorical columns to numerical ones with techniques like one-hot encoding
     - You have provided some reasoning or justification for each step you have taken to clean the data
 - Identify correlated variables
     - You have shown the correlation between variables using a correlation matrix, heatmap, or otherwise
