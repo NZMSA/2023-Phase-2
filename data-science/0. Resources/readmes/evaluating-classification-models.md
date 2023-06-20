@@ -1,61 +1,44 @@
 # Evaluating Classification Models
-Now, let's recap. With some basic data cleaning, analysis and ML algorithms, you were able to get a good accuracy. Not bad for a few lines of code. But the question we need to ask now is: Is the model useful and can we do better? 
 
-## Determining a Baseline Accuracy
+Evaluating leads directly on from testing your model. A good accuracy on your test set is not enough to say that your model is useful! Your model could be overfitting on the test set, your dataset may contain samples that belong to one class far more than the other class/es, and your classification model could simply be choosing the majority class which would automatically yield a high accuracy without any "learning" taking place.
 
-Let's say you were working on the popular [Titanic Dataset](https://www.kaggle.com/competitions/titanic/overview) and you had to determine if a person onboard survived or not using various information like gender, age, marriage status, salary, etc. And, we wanted to know if our model that has an $80\\%$ accuracy is good or not. How would we do that?
+We would like you to evaluate your model using the following model evaluation techniques for your classification model/s:
 
-We know that this is a binary classification problem and that there are two outcomes: the passenger survived or died. Similar to a coin flip problem where we have a 50-50 chance of getting right, we could do the same here and set $50\\%$ as the worst model performance. Anything lower, we could trash the model and use a coin instead.
+1. Confusion matrix
+    - Plot confusion matrices with labels and axes for clarity
+2. Precision, recall, F1-score
+    - Calculate and display your precision, recall, and F1-score
 
-Without any information about the dataset, we can always get a $50\\%$ accuracy with a binary problem. However, what if we had information about the dataset? Let's say from EDA, you know that $1502/2224$ or $67.5\\%$ of people died. So, just by guessing that the person died, we would be right $67.5\\%$ of the time!
+## 1. Confusion matrix
 
-## Getting Confusion Matrix
+A model that has a high test accuracy can do more harm than good. Imagine if you were dealing with a dataset for a serious disease that only 1 out of 1000 people have. A model trained on this dataset of 1000 patients could have an accuracy of 99.9% by simply predicting "does not have disease" for each patient, but this metric wouldn't be useful because it tells us nothing about the model's ability to detect that one patient who actually does have the disease. 
 
-As from above, we can see that accuracy is not always the best metric to use when we have uneven classes.
-
-This can also prove to be very dangerous. What if instead of the titanic dataset, we were dealing with a dataset for a serious disease where only 1/2224 are affected by it?
-
-Getting a 100% accuracy on the model still wouldn't make it useful because it tells us nothing about detecting that one person who has the disease. To analyse our values for True Positives, True Negatives, False Positives and False Negatives, we need to use a confusion matrix.
-
-In ```sklearn```, this is simple:
-
+With this in mind, we can calculate four different values - true positives (TP), true negatives (TN), false positives (FP), false negatives (FN) to provide a better view of our model's performance. These values can be displayed on a confusion matrix, as shown below:
 ```python
 from sklearn.metrics import confusion_matrix
-
 cm = confusion_matrix(y_test, predictions)
-print(cm)
 ```
 
-As an exercise, try to graph your confusion matrix for your model with labels and axes to make sense of how your model performs on your dataset.
+## 2. Precision, recall, F1-score
 
-## Getting the F1-score
+The four values above can be used to calculate [precision and recall](https://en.wikipedia.org/wiki/Precision_and_recall).
+- Precision: The fraction of actual positive instances among all instances that were predicted to be positive (TP / (TP + FP))
+    - In other words, out of all the patients who were predicted to have the disease, how many actually had the disease? For the example above, no patients were predicted by our model to have the disease, so our precision will be $0/0 = undefined$ (note that Scikit-learn will return an undefined value as 0).
+- Recall: The fraction of actual positive instances among all instances are actually positive ((TP / TP + FN))
+    - In other words, out of all the patients who have the disease (i.e. our relevant instances), how many were predicted by our model to have the disease? For the example above, only 1 patient had the disease but that patient was not predicted by our model to have the disease, so our recall will be $0/1 = 0$.
 
-Going back to the problem at hand, we could use these values to calculate [*Precision* and *Recall*](https://en.wikipedia.org/wiki/Precision_and_recall). 
+Precision and recall can then be used to calculate the F1-score, which simply balances precision and recall to get one single number that can give us a good sense of how well a model is performing:
+$$F1score = 2 * \frac{(precision * recall)}{(precision + recall)}$$
 
-Remember that, Rec*all* is the number of positive instances predicted correct from *all* instances. Let's say, we want to detect the disease, so ```disease = 1``` and ```no disease = 0```. Here, our recall would be ```disease=1``` over *all*,  which is zero ($0/2224 = 0$). On the other hand, precision is the number of positive instances predicted correct out of all *predicted* positive instances. Here, this is undefined but, we can call it a zero ($0/0+0 = undefined$). Do note that if we had set ```disease = 0``` and ```no disease = 1```, we would have gotten different answers. 
+For the example above, the F1-score will be 0, quantifiably confirming that the disease model is not useful for predicting patients who have the disease. Depending on the problem, we can choose to pay more attention to precision or recall - for the example above, we would pay more attention to recall because, while we wouldn't mind predicting that some patients who don't have the disease actually do, we don't want to predict that patients (who actually have the disease) don't have it.
 
-By having both precision and recall being $0$, we can now say for sure that our model is utter garbage at detecting people who do have the disease. 
-
-In general, we use f1-score to combine both precision and recall so that we can get a sense of how well a model is performing.
-
-$$f1 score = 2 * \frac{(precision * recall)}{(precision + recall)}$$
-
-Getting this in ```sklearn``` is as easy as:
+All the values above can be calculated as shown below:
 ```python
 from sklearn.metrics import classification_report
-
 cr = classification_report(y_test, predictions)
-print(cr)
 ```
 
-Depending on the problem, we can choose to give more emphasis on precision or recall. For example, here we would have given more emphasis on Precision for ```disease = 1``` because we would certainly not want to diagnose a patient with not having the disease when in reality, they actually have it. 
-
-This directly links to [ROC and AUC curves](https://learn.microsoft.com/en-nz/training/modules/optimize-model-performance-roc-auc/) where we tune our hyperparameters to put emphasis on one or the other, depending on our problem.
-
-
-
-
-
+---
 
 
 ### For Classification Models
