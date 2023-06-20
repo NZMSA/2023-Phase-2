@@ -4,17 +4,7 @@ Machine Learning (ML), as the name suggests, is all about teaching a machine *ho
 
 As such, it is vital that you don't just know what to do, but also know why you’re doing it. Imagine if you were a mechanic and you asked a coworker to give you a tool (e.g. a wrench) to fix a problem that you (and supposedly the worker too) are familiar with - your coworker hands you a Phillips screwdriver, and then they hand you a flathead screwdriver, and then a hammer. At best, this shows a complete lack of understanding of the problem at hand. At worst, it makes solving the problem impossible or even worse, sets you up for a hazardous and harmful operation that could cost both you and your coworker.
 
-<div align="center">
-  <div style="float:left;margin-right:10px;">
-  <img src="https://github.com/NZMSA/2023-Phase-2/assets/67076071/fa342869-aef3-43d8-9714-d1a2d8b5cc80"
-  width=550
-  height=auto
-  ><br>
-    <p style="font-size:1.5vw;">"Man is a tool-using animal. Without tools, he is nothing. With tools, he is all." — Thomas Carlyle</p>
-  </div>
-</div>
-
-In a similar way, if you are a data scientist and you can't explain how you're training your models but you claim that you've validated the results your models are producing, and interpret your results as if they were right, then the work you do may lead to negative consequences for you, your employer, and the people who will use the results of your models. This is why the need to make sure that you use the right tools is paramount. So now that we've hammered our point (no pun intended), we'll guide you on what to do when training ML models and just as (if not, more) importantly, how to evaluate them.
+In a similar way, if you are a data scientist and you can't explain how you're training your models but you claim that you've validated the results your models are producing and interpreted your results as if they were correct without question, then the work you do may lead to negative consequences for you, your employer, and the people who will use the results of your models. This is why the need to make sure that you use the right tools is paramount. So now that we've hammered our point (no pun intended), we'll guide you on what to do when training ML models and just as (if not, more) importantly, how to evaluate them.
 
 There are many categories of machine learning problems (a specific problem's category can be determined by its target variable and data modelling goals), but we are only going to focus on two for this part: classification and regression. As a refresher, the main difference between classification and regression is that classification is about predicting a discrete variable while regression is about predicting a continuous variable. For both types of problems, we can train and test an ML model but oftentimes, models can seem to achieve good results during testing but when they get deployed in the real world, they fail in an utterly miserable way. One of the main reasons that this happens is due to overfitting (i.e. the model is great at predicting using data it has already seen but terrible at predicting using new data). To overcome this, we can use cross-validation beforehand to get a sense of how a model will perform in the real world. This involves splitting the dataset into a certain number of groups (also called folds) and then using each fold of the data to test a model that has been trained on all the other folds.
 
@@ -70,17 +60,20 @@ To help you train and evaluate your models, we have split up training and evalua
 ### Bonus
 
 If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above.
+
 - Tune your chosen models in at least one way e.g. find the best value of a single hyperparameter, find the best train-test split
   - Please refer to [Tuning Models](./tuning-models.md)
-  - If you decide to do this bonus task, quantitatively described the improvement after tuning using an evaluation metric in your notebook
-- Perform tasks 2-4 on one to two other algorithms for each dataset, compare their performances against each other, and then choose the model with the best performance for task 5. There are various other algorithms that you could create other models from that were covered in the Microsoft Learn modules, including:
-    - Decision tree
-    - K-nearest neighbours
-    - Lasso regression
-    - Gradient boosting
-    - Neural network (refer to [Training Neural Nets](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models) for more information)
+  - If you decide to do this bonus task, quantitatively described the improvement after tuning using an evaluation metric in your notebook.
 
-Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters. If you decide to do this bonus task, show the performance of each model in your notebook.
+- Perform tasks 2-4 on one to two other algorithms for each dataset, compare their performances against each other, and then choose the model with the best performance for task 5. 
+    - There are various other algorithms that you could create other models from that were covered in the Microsoft Learn modules, including:
+        - Decision tree
+        - K-nearest neighbours
+        - Lasso regression
+        - Gradient boosting
+        - Neural network (refer to this Microsoft Learn module for more information: [Train and evaluate deep learning models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models))
+    - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters. 
+    - If you decide to do this bonus task, show the performance of each model in your notebook.
 
 ## Submission
 
@@ -105,7 +98,7 @@ For each task, we will be making sure that you have met the criteria below.
     - You have chosen an appropriate algorithm for each dataset
 - Train and test a model
     - You have trained and tested your models appropriately
-    - You have printed a simple metric for each model's predictions and/or draw a graph for linear regression
+    - You have printed a simple metric for each model's predictions and/or drawn a graph for linear regression
 - Evaluate the model
     - You have used evaluation metrics for each model
     - You have used cross-validation
@@ -123,24 +116,40 @@ For each task, we will be making sure that you have met the criteria below.
 
 ## Tips
 
-This part relies heavily on the Microsoft Learn modules from Weeks 3 and 4 of Phase 1! Below are some resources that you might find helpful:
-  - [Scikit-Learn Model Cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
-  - Testing a model:
-    ```python
-    # Classification
-    from sklearn.metrics import accuracy_score
-    accuracy = accuracy_score(y_test, predictions)
-    ```
-    ```python
-    # Regression
-    from sklearn.metrics import mean_squared_error
-    mse = mean_squared_error(y_test, predictions)
-    ```
-  - Getting regression coefficients:
-    ```python
-    # Get regression model coefficients
-    pd.DataFrame(model.coef_, X.columns, columns = ['Coefficient'])[:-1]
-    ```
-  -  [No Free Lunch Theorem (NFLT)](https://robertmarks.org/Classes/ENGR5358/Papers/NFL_4_Dummies.pdf): When it comes to data modelling, a beginner's question is always "What is the best ML algorithm to learn?" To this, a beginner must learn the NFLT which states that there is no one algorithm that can achieve the best results in all problems. So the best approach is to try different ML algorithms, tune them, and compare them against each other for our specific problem. We can have an intuition on what type of model can be used by understanding what type of problem we are dealing with.
+- This part relies heavily on the Microsoft Learn modules from Weeks 3 and 4 of Phase 1, so we strongly recommend you go through those while you're completing this part! In particular, we recommend that you go through the following units, modules, code snippets, and external resources for each task to support your work:
+    - All tasks
+        - [Scikit-Learn Cheat Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
+    - Load and split preprocessed data
+        - ```python
+            from sklearn.model_selection import train_test_split
+            # Create an 80-20 train-test split on the dataset
+            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+            ```
+    - Choose an algorithm
+        - [No Free Lunch Theorem (NFLT)](https://robertmarks.org/Classes/ENGR5358/Papers/NFL_4_Dummies.pdf): When it comes to data modelling, a beginner's question is always "What is the best ML algorithm to learn?" To this, a beginner must learn the NFLT which states that there is no one algorithm that can achieve the best results in all problems. So the best approach is to try different ML algorithms, tune them, and compare them against each other for our specific problem. We can have an intuition on what type of model can be used by understanding what type of problem we are dealing with.
+        - ```python
+            from sklearn.linear_model import LogisticRegression
+            # Load an untuned logistic regression model
+            model = LogisticRegression()
+            ```
+    - Train and test a model
+        - ```python
+            # Train a model using a training set
+            model.fit(X_train, y_train)
+            # Get predictions using the features of a test set
+            predictions = model.predict(X_test)
+            # Test a model using predictions and the targets of a test set
+            ## Classification
+            from sklearn.metrics import accuracy_score
+            accuracy = accuracy_score(y_test, predictions)
+            ## Regression
+            from sklearn.metrics import mean_squared_error
+            mse = mean_squared_error(y_test, predictions)
+            ```
+    - Summary
+        - ```python
+            # Get regression model coefficients
+            pd.DataFrame(model.coef_, X.columns, columns = ['Coefficient'])[:-1]
+            ```
 
-More often than not, data scientists need to go back to their training and evaluation steps after realising they need to train or evaluate their data better or in a different way. So don't be afraid to revisit this part after you think you've completed it, and write about any changes you made to your training and evaluation steps in your summary!
+- More often than not, data scientists need to go back to their training and evaluation steps after realising they need to train or evaluate their data better or in a different way. So don't be afraid to revisit this part after you think you've completed it, and write about any changes you made to your training and evaluation steps in your summary!
