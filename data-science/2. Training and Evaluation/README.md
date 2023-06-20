@@ -61,9 +61,8 @@ To help you train and evaluate your models, we have split up training and evalua
 
 If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above.
 
-- Tune your chosen models in at least one way e.g. find the best value of a single hyperparameter, find the best train-test split
-  - Please refer to [Tuning Models](./tuning-models.md)
-  - If you decide to do this bonus task, quantitatively described the improvement after tuning using an evaluation metric in your notebook.
+- Tune your chosen models in at least one way listed in [Tuning Models](./tuning-models.md) (choose the way/s that you think are most appropriate for your models)
+  - If you decide to do this bonus task, quantitatively describe the improvement after tuning using an evaluation metric in your notebook.
 
 - Perform tasks 2-4 on one to two other algorithms for each dataset, compare their performances against each other, and then choose the model with the best performance for task 5. 
     - There are various other algorithms that you could create other models from that were covered in the Microsoft Learn modules, including:
@@ -73,7 +72,7 @@ If you would like to extend yourself (and potentially attain a mark greater than
         - Gradient boosting
         - Neural network (refer to this Microsoft Learn module for more information: [Train and evaluate deep learning models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models))
     - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters. 
-    - If you decide to do this bonus task, show the performance of each model in your notebook.
+    - If you decide to do this bonus task, explain what you did and show the performance of each model in your notebook compared to the performance of the model you initially built.
 
 ## Submission
 
@@ -98,11 +97,13 @@ For each task, we will be making sure that you have met the criteria below.
     - You have chosen an appropriate algorithm for each dataset
 - Train and test a model
     - You have trained and tested your models appropriately
+    - You have reported the accuracy of your models on the training and test sets
     - You have printed a simple metric for each model's predictions and/or drawn a graph for linear regression
 - Evaluate the model
-    - You have used evaluation metrics for each model
+    - You have used evaluation metrics for each model, including (but not limited to) confusion matrix, precision, recall, F1-score
+    - You have have interpreted your confusion matrices, F1-scores etc. correctly via comments inside your notebook explaining what your specific metrics mean
     - You have used cross-validation
-    - You have graphically evaluated each model using confusion matrices, ROC curves, or otherwise
+    - You have graphically evaluated the performance of each model using ROC curves or otherwise
 - Summary
     - You have summarised what you have found during training and evaluation
     - You have concisely described the training and evaluation steps you have taken for each of your chosen datasets
