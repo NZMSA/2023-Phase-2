@@ -1,4 +1,5 @@
 using Back_End.Contexts;
+using Back_End.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,11 +17,12 @@ var configuration = new ConfigurationBuilder()
 builder.Services.AddDbContext<TodoItemContext>(opt =>
     opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
 );
+builder.Services.AddScoped<TodoItemService>();
 
 builder.Services.AddDbContext<TodoListContext>(opt =>
     opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
 );
-
+builder.Services.AddScoped<TodoListService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

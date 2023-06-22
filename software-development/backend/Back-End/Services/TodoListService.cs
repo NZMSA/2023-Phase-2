@@ -25,7 +25,7 @@ namespace Back_End.Services
             return await _listContext.TodoLists.Include(l => l.TodoItemList).ToListAsync();
         }
 
-        public async Task<TodoList> GetTodoList(int id)
+        public async Task<TodoList> GetTodoList(long id)
         {
             return await _listContext.TodoLists.Include(l => l.TodoItemList).FirstOrDefaultAsync(l => l.Id == id);
         }
@@ -36,7 +36,7 @@ namespace Back_End.Services
             await _listContext.SaveChangesAsync();
         }
 
-        public async Task DeleteTodoList(int id)
+        public async Task DeleteTodoList(long id)
         {
             var list = await _listContext.TodoLists.FindAsync(id);
             _listContext.TodoLists.Remove(list);
