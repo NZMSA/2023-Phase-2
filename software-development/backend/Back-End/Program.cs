@@ -15,12 +15,14 @@ var configuration = new ConfigurationBuilder()
     .Build();
 
 builder.Services.AddDbContext<TodoItemContext>(opt =>
-    opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
+    // opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
+    opt.UseSqlServer(configuration.GetConnectionString("DatabaseConnection"))
 );
 builder.Services.AddScoped<TodoItemService>();
 
 builder.Services.AddDbContext<TodoListContext>(opt =>
-    opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
+    // opt.UseInMemoryDatabase(configuration.GetConnectionString("DatabaseConnection"))
+    opt.UseSqlServer(configuration.GetConnectionString("DatabaseConnection"))
 );
 builder.Services.AddScoped<TodoListService>();
 
