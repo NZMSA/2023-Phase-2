@@ -68,6 +68,14 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseCors(policy =>
+{
+    policy.WithOrigins("http://localhost:3000")
+        .AllowCredentials()
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+});
+
 app.MapControllers();
 
 app.Run();
