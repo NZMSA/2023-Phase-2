@@ -3,35 +3,39 @@ import { Card, CardActions, CardContent, CardHeader, IconButton, styled } from "
 import React from 'react';
 
 export interface TodoCardProps {
-    title : string,
-    description: string,
-    cardItems: JSX.Element[],
-    cardKey: string,
-    //TODO: Add some user posting details here
+    content: string,
+    createdBy: string,
+    dateCreated: string,
+    dateDue: string,
+    id: number,
+    labels: string[],
+    state: number,
+    title: string,
+    todoListId: number
 }
 
-const StyledCard = styled(Card)(({theme}) => ({
+const StyledCard = styled(Card)(({ theme }) => ({
     maxWidth: '500px'
 }));
 
-const TodoCard = ({title, description, cardItems} : TodoCardProps) => {
+const TodoCard = ({ content, createdBy, dateCreated, dateDue, id, labels, state, title, todoListId }: TodoCardProps) => {
     return (<StyledCard>
         <CardHeader
             title={title}
-            subheader={description}/>
+            subheader={`Created By: ${createdBy}`} />
         <CardContent>
-            {cardItems}
+            {content}
         </CardContent>
-        <CardActions sx={{alignContent: 'flex-end', justifyContent: 'end', alignSelf: 'end'}}>
+        <CardActions sx={{ alignContent: 'flex-end', justifyContent: 'end', alignSelf: 'end' }}>
             {/*TODO: Set up these actions correctly */}
             <IconButton >
-                <Share data-testid="todo-card-share"/>
+                <Share data-testid="todo-card-share" />
             </IconButton>
             <IconButton >
-                <Done  data-testid="todo-card-done"/>
+                <Done data-testid="todo-card-done" />
             </IconButton>
             <IconButton  >
-                <Close data-testid="todo-card-close"/>
+                <Close data-testid="todo-card-close" />
             </IconButton>
         </CardActions>
     </StyledCard>)

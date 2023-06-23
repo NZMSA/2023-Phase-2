@@ -38,8 +38,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
+
+app.UseCors(policy =>
+{
+    policy.WithOrigins("http://localhost:3000")
+        .AllowCredentials()
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+});
 
 app.MapControllers();
 

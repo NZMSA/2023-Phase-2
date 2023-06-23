@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material';
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { TodoCard } from './TodoCard';
@@ -18,22 +17,28 @@ type Story = StoryObj<typeof meta>;
 export const BasicTodo: Story = {
   args: {
     title: "Run Phase 2 Meeting",
-    description: "A meeting about the progress we have on our respective workshops",
-    cardItems: [],
-    cardKey: "TodoList.Items.0"
+    createdBy: 'Nicholas Kondal',
+    dateCreated: new Date().toString(),
+    dateDue: new Date().toString(),
+    id: 1,
+    labels: [],
+    state: 0,
+    todoListId: 0,
+    content: "Launch Phase 2!"
   },
 };
 
 export const TodoWithItem: Story = {
     args: {
-      title: "Run Phase 2 Meeting",
-      description: "A meeting about the progress we have on our respective workshops",
-      cardItems: [
-        <Typography>
-            Some Text About Item One
-        </Typography>
-      ],
-      cardKey: "TodoList.Items.0"
+      title: "Panick Write Phase 2",
+      createdBy: 'Rodger Gu',
+      dateCreated: new Date().toString(),
+      dateDue: new Date().toString(),
+      id: 1,
+      labels: [],
+      state: 0,
+      todoListId: 0,
+      content: "Quick, Write Phase 2!"
     },
     play: async ({args, canvasElement, step}) => {
       const canvas = within(canvasElement);
