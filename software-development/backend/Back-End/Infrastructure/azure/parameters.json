@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "acrName": {
+      "value": "acrName"
+    },
+    "acrSku": {
+      "value": "Basic"
+    },
+    "appName": {
+      "value": "backEndApp"
+    },
+    "appServicePlanSku": {
+      "value": "F1"
+    },
+    "dockerImageName": {
+      "value": "backEndImage"
+    }
+  }
+}
