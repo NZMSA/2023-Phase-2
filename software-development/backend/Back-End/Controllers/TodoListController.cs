@@ -1,5 +1,6 @@
 ﻿using Back_End.Models;
 using Back_End.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,7 @@ namespace Back_End.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "BasicAuthentication")]
     public class TodoListController : ControllerBase
     {
         private readonly TodoListService _service;
