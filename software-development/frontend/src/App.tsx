@@ -1,25 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ThemeProvider } from '@emotion/react';
+import { lightTheme } from './themes';
+import { useGetAllTodoListsQuery } from './api/apiSlice';
+import { CircularProgress } from '@mui/material';
+import { TodoList } from './stories/TodoList/TodoList';
 
 function App() {
+  const {data, isLoading, isError } = useGetAllTodoListsQuery();
+
+  if(isLoading) return <CircularProgress />;
+  if(isError) return <p>Oops, Something went wrong!</p>;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //TODO: Hook theming up to redux so that it selects
+    <ThemeProvider theme={lightTheme}>
+      <div className="App">
+        {data!.length === 0 && <p>No Todo Lists!</p>}
+        {data!.map(tdl => <TodoList todoListItems={tdl.todoItemList} key={tdl.id}/>)}
+      </div>
+    </ThemeProvider>
   );
 }
 
