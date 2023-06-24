@@ -74,8 +74,8 @@ The back-end folder is a C# 7 Web API project that has been set up as an example
 
 ### Starting Fresh
 ---
-If you wish to start fresh, then the best way to do so would be to following the getting started instructions for the following links:
-  - Front-End Frameworks
+If you wish to start fresh, then the best way to do so would be to follow the getting started instructions for these links:
+  - (One Of These) Front-End Frameworks
     - [Create React App](https://create-react-app.dev/docs/getting-started)
       - You'll want to use the following command: `npx create-react-app my-app --template typescript`
     - [Next](https://nextjs.org/docs)
