@@ -1,11 +1,6 @@
 # Data Science Phase 2 Task 3
 
-Welcome to Phase 2 Task 3! Congratulations for making it so far. Microsoft Azure is a cloud computing platform and service provided by Microsoft. For this task, you will learn how data scientists deploy machine learning models via the machine learning service in Microsoft's Azure.
 
-# Prerequisites
-1. An Azure account. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/en-us/free/) before you begin.
-2. Python or Anaconda
-3. ```pip install azureml-core```
 
 ## Getting Started:
 Firstly, we need to setup Azure to host our machine learning model:
@@ -61,11 +56,6 @@ xgbClf = XGBClassifier(use_label_encoder = False)
 xgbClf.fit(X_train, y_train)
 xgbClf.save_model("model.json")
 ```
-
-## Datasets list:
-* [Best Songs on Spotify for every year (2000-2023)](https://www.kaggle.com/datasets/conorvaneden/best-songs-on-spotify-for-every-year-2000-2023)
-* [AI Global Index](https://www.kaggle.com/datasets/katerynameleshenko/ai-index)
-* [COVID -19 Coronavirus Pandemic Dataset](https://www.kaggle.com/datasets/whenamancodes/covid-19-coronavirus-pandemic-dataset)
 
 
 ## Model Deployment:
@@ -202,9 +192,3 @@ print(response.json())
 ***NOTE: You may want to stop the container instance that hosts your model when not in use because it costs money to host the model.***
 
 ***Just find the container instance of your model and press the stop button. You can press start whenever you want to use your model.***
-
-Finally, the third part will involve you doing essentially following the same process that you did for the first two parts, but this time all on the cloud! Using Microsoft Azure, you'll explore features within Azure Machine Learning, specifically:
-    - Notebooks for saving and executing Jupyter notebooks
-    - AutoML to automatically train and tune models
-    - Runs to track metrics like precision, recall, ROC/AUC etc.
-    - Model deployment using Docker containers and from within your code into Azure
