@@ -9,7 +9,7 @@ This year, Phase 2 of the Data Science stream has been split into three parts:
 ## Getting Started
 
 To get started with Phase 2 of the Data Science stream:
-1. Go to the README in the [Resources folder](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/0.%20Resources) and choose **two** datasets (one for classification, one for regression) from the ones that we have provided - you will use these two datasets for all three parts.
+1. Go to the README in the [Resources folder](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/0.%20Resources) and choose **two** datasets (one for classification, one for regression) - you will use these two datasets for all three parts.
 2. Create and activate a virtual environment to use for all three parts using the provided `requirements.txt` file with the following recommended packages:
     - Numpy and Pandas: data manipulation and processing
     - Matplotlib and Seaborn: plotting and visualisation
