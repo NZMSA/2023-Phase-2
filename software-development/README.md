@@ -86,7 +86,7 @@ If you wish to start fresh, then the best way to do so would be to follow the ge
 
 ## Office Hours
 ---
-We will be online on discord during weekday evenings and some hours of the weekend to answer any questions that you may specifically have! Please check out the [discord server]() for more information.
+We will be online on discord during weekday evenings and some hours of the weekend to answer any questions that you may specifically have! Please check out the [discord server](https://discord.gg/pGPGGXQ6SC) for more information.
 
 ---
 Good Luck Everyone, and happy hacking!
