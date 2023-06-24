@@ -1,6 +1,7 @@
+azureml-core
+ipykernel
 matplotlib
 numpy
 pandas
-python==3.11.0
 scikit-learn
 seaborn
