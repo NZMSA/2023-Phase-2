@@ -56,11 +56,37 @@ You will find the following links helpful:
 - [FluentValidation](https://fluentvalidation.net/)
   - A library for ensuring that any arguments and requests are properly validated
 
-## Workshops
+## Getting Started
 ---
-We will be running the following workshops, so keep an eye out on our socials for announcements on when those are happening. Here is a list of workshops that we will be running this year:
-- 
+The easiest way to get started with those requirements would be to build off of the existing code given in this repository. 
 
+The front-end folder is a create-react-app application that has been scaffolded out and has had storybook configured correctly to work for the project at hand. To use the front-end project as a starting point:
+  - remove the models in the models folder
+  - remove the contents of the stories folder
+  - change `App.tsx` and empty out the component contents
+
+The back-end folder is a C# 7 Web API project that has been set up as an example with some libraries and CORS set up correctly. To use the back-end project as a starting point:
+  - remove all existing controllers in the `Controllers` folder
+  - clear out any service registrations in `Startup.cs` related to example services
+  - remove the contents of the `Services` folder
+  - remove the contexts from the `Contexts` folder
+  - remove all models from the `Models` folder
+
+### Starting Fresh
+---
+If you wish to start fresh, then the best way to do so would be to following the getting started instructions for the following links:
+  - Front-End Frameworks
+    - [Create React App](https://create-react-app.dev/docs/getting-started)
+      - You'll want to use the following command: `npx create-react-app my-app --template typescript`
+    - [Next](https://nextjs.org/docs)
+    - [SvelteKit](https://learn.svelte.dev/tutorial/introducing-sveltekit)
+    - [Redwood.js](https://redwoodjs.com/docs/quick-start)
+  - Backend
+    - [Web API](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio) 
+
+## Office Hours
+---
+We will be online on discord during weekday evenings and some hours of the weekend to answer any questions that you may specifically have! Please check out the [discord server]() for more information.
 
 ---
 Good Luck Everyone, and happy hacking!
