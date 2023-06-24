@@ -1,4 +1,4 @@
-# 2023-Phase-2
+# 2023 Phase 2
 
 Welcome to Phase 2 of the 2023 MSA programme! This year, Phase 2 consists of two components:
 
@@ -24,9 +24,9 @@ Contents:
 - Have completed all the Microsoft Learn modules as listed in the [Schedule from Phase 1](https://github.com/NZMSA/2023-Phase-1#schedule) for your chosen stream
 - Have downloaded all the [key tools from Phase 1](https://github.com/NZMSA/2023-Phase-1#key-tools) for your chosen stream
 - Can access the [Microsoft Learn modules from Phase 1](https://github.com/NZMSA/2023-Phase-1#schedule) to refer to as you complete Phase 2
-4. Create a repository inside your personal GitHub account to store all your work and clone this into your IDE
+2. Create a repository inside your personal GitHub account to store all your work and clone this into your IDE
     - In your repository, we recommend that you create a folder for each part of your chosen stream to store your work for each part separately
-5. Refer to the folder for each stream to get started:
+3. Refer to the folder for each stream to get started:
     - [Data Science](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science)
     - [Software Development](https://github.com/NZMSA/2023-Phase-2/tree/main/software-development)
 
