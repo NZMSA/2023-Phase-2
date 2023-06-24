@@ -6,7 +6,7 @@ As such, it is vital that you don't just know what to do, but also know why youâ
 
 In a similar way, if you are a data scientist and you can't explain how you're training your models but you claim that you've validated the results your models are producing and interpreted your results as if they were correct without question, then the work you do may lead to negative consequences for you, your employer, and the people who will use the results of your models. This is why the need to make sure that you use the right tools is paramount. So now that we've hammered our point (no pun intended), we'll guide you on what to do when training ML models and just as (if not, more) importantly, how to evaluate them.
 
-There are many categories of machine learning problems (a specific problem's category can be determined by its target variable and data modelling goals), but we are only going to focus on two for this part: classification and regression. As a refresher, the main difference between classification and regression is that classification is about predicting a discrete variable while regression is about predicting a continuous variable. For both types of problems, we can train and test an ML model but oftentimes, models can seem to achieve good results during testing but when they get deployed in the real world, they fail in an utterly miserable way. One of the main reasons that this happens is due to overfitting (i.e. the model is great at predicting using data it has already seen but terrible at predicting using new data). To overcome this, we can use cross-validation beforehand to get a sense of how a model will perform in the real world. This involves splitting the dataset into a certain number of groups (also called folds) and then using each fold of the data to test a model that has been trained on all the other folds.
+There are many categories of machine learning problems (a specific problem's category can be determined by its target variable and data modelling goals), but we are only going to focus on two for this part: classification and regression. As a refresher, the main difference between classification and regression is that classification is about predicting a discrete variable while regression is about predicting a continuous variable.
 
 ## Tasks
 
@@ -44,9 +44,9 @@ To help you train and evaluate your models, we have split up training and evalua
 ### 4. Evaluate the model
 
 - Evaluate your trained classification model
-    - Please refer to [Evaluating Classification Models](./evaluating-classification-models.md)
+    - Please refer to [Evaluating Classification Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/evaluating-classification-models.md)
 - Evaluate your trained regression model
-    - Please refer to [Evaluating Regression Models](./evaluating-regression-models.md)
+    - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/evaluating-regression-models.md)
 
 ### 5. Summary
 
@@ -61,7 +61,7 @@ To help you train and evaluate your models, we have split up training and evalua
 
 If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above.
 
-- Tune your chosen models in at least one way listed in [Tuning Models](./tuning-models.md) (choose the way/s that you think are most appropriate for your models)
+- Tune your chosen models in at least one way listed in [Tuning Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/tuning-models.md) (choose the way/s that you think are most appropriate for your models)
   - If you decide to do this bonus task, quantitatively describe the improvement after tuning using an evaluation metric in your notebook.
 
 - Perform tasks 2-4 on one to two other algorithms for each dataset, compare their performances against each other, and then choose the model with the best performance for task 5. 
@@ -102,7 +102,6 @@ For each task, we will be making sure that you have met the criteria below.
 - Evaluate the model
     - You have used evaluation metrics for each model, including (but not limited to) confusion matrix, precision, recall, F1-score
     - You have have interpreted your confusion matrices, F1-scores etc. correctly via comments inside your notebook explaining what your specific metrics mean
-    - You have used cross-validation
     - You have graphically evaluated the performance of each model using ROC curves or otherwise
 - Summary
     - You have summarised what you have found during training and evaluation
@@ -147,6 +146,8 @@ For each task, we will be making sure that you have met the criteria below.
             from sklearn.metrics import mean_squared_error
             mse = mean_squared_error(y_test, predictions)
             ```
+    - Evaluate the model
+        - [Scikit-learn model evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html)
     - Summary
         - ```python
             # Get regression model coefficients
