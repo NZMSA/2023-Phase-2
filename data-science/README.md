@@ -1,40 +1,30 @@
 # 2023 Phase 2 - Data Science
 
-This year, Phase 2 of the Data Science stream has been split into 3 parts:
+This year, Phase 2 of the Data Science stream has been split into three parts:
 
-1. [Analysis and Preprocessing]()
-2. [Training and Evaluation]()
-3. [Azure]()
+1. [Analysis and Preprocessing](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/1.%20Analysis%20and%20Preprocessing)
+2. [Training and Evaluation](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/2.%20Training%20and%20Evaluation)
+3. [Microsoft Azure](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/3.%20Azure)
 
 ## Getting Started
 
 To get started with Phase 2 of the Data Science stream:
-1. Ensure that you have completed all the Microsoft Learn modules as listed in the [Schedule section](https://github.com/NZMSA/2023-Phase-1#schedule) of the Phase 1 README for the Data Science stream
-2. Ensure that you have downloaded all the tools listed in the [Key Tools section](https://github.com/NZMSA/2023-Phase-1#data-science-6) of the Phase 1 README for the Data Science stream
-3. Create a public repository inside your personal GitHub account to store all your work and clone this into your IDE
-    - In your repository, we recommend that you create a folder for each part to store your work for each part separately
-4. Go to the README in the [Resources folder]() and choose **two** datasets from the ones that we have provided - you will use these for all three parts
-5. Create and activate a virtual environment to use for all three parts using the provided `requirements.txt` file with the following recommended packages:
+1. Go to the README in the [Resources folder](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/0.%20Resources) and choose **two** datasets (one for classification, one for regression) from the ones that we have provided - you will use these two datasets for all three parts.
+2. Create and activate a virtual environment to use for all three parts using the provided `requirements.txt` file with the following recommended packages:
     - Numpy and Pandas: data manipulation and processing
     - Matplotlib and Seaborn: plotting and visualisation
     - Scikit-learn: model training and evaluation
-6. Start the first part and continue until you have completed the third part
-
-## Submission
-
-To complete Phase 2 of the Data Science stream and submit evidence of your completion:
-
-1. Ensure that you have completed all three parts by checking that you have included all items listed in the Submission section of each part in your repository.
-2. Submit this form by [TIME, DATE]: TBA
+3. Start the first part and continue until you have completed the third part
 
 ## Tips
 
 - Before beginning Phase 2, ensure that you:
     - Can create and activate a virtual environment using a `requirements.txt` file with venv and pip:
         - Shell commands:
-            - `python -m venv <your env name>`
+            - `python -m venv venv` (Windows) or `python3 -m venv venv` (MacOS)
+            - `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (MacOS)
+            - `cd data-science`
             - `pip install -r requirements.txt`
-            - `.\venv\Scripts\activate`
         - Please refer to [this Week 1 module](https://learn.microsoft.com/en-us/training/modules/python-create-manage-projects/2-set-up-project) for more information
     - Can use a virtual environment with a Jupyter notebook in Visual Studio Code
     - Are comfortable using packages like Numpy, Pandas, Matplotlib, Seaborn, and Scikit-learn

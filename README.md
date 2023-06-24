@@ -33,14 +33,15 @@ Contents:
 ## Submission
 
 To complete the technical component of Phase 2 and submit evidence of your completion:
-1. Ensure that you have completed all parts of your chosen stream by checking that you have included all items in your repository, as stated in the folder for your chosen stream
-2. Ensure that your repository is public so that it can be accessed by the MSA team for marking
-3. Submit this form by 11:59pm, Sunday 6 August: [MSA 2023 Phase 2 Submission (link TBC)]()
+1. Ensure that you have:
+- Completed all parts of your chosen stream by checking that you have included all items in your repository, as stated in the folder for your chosen stream
+- Made your repository public so that it can be accessed by the MSA team for marking
+2. Submit this form by 11:59pm, Sunday 6 August: [MSA 2023 Phase 2 Submission (TBC)]()
 
 ## Support
 
 If you have any questions, comments, or concerns, please contact the MSA team via our:
-- [Discord office hours (link TBC)]
+- [Discord office hours](https://1drv.ms/x/s!AhUTdgNym7JMnmwi9Pjq74BOhQBC?e=Bi8QqC)
     - The MSA team are available in the voice channels on the days and times specified in the link above for students to ask questions directly to the MSA team members that created this year's technical content.
 - [Support section from Phase 1](https://github.com/NZMSA/2023-Phase-1#support)
 
