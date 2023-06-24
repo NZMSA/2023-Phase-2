@@ -1,11 +1,13 @@
 ﻿using Back_End.Models;
 using Back_End.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Back_End.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize(AuthenticationSchemes = "BasicAuthentication")]
     public class TodoItemsController : ControllerBase
     {
         private readonly TodoItemService _service;

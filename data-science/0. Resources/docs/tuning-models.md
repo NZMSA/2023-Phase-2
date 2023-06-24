@@ -14,6 +14,15 @@ Hyperparameters are set by you, the data scientist, based on your intuition or p
     - [Hyperparameters in classification](https://learn.microsoft.com/en-nz/training/modules/machine-learning-architectures-and-hyperparameters/6-hyperparameters)
     - [Measure and optimize model performance with ROC and AUC](https://learn.microsoft.com/en-us/training/modules/optimize-model-performance-roc-auc)
 
+
+### Cross-validation
+
+The hyperparameter tuning methods available in Scikit-learn use another method called cross-validation. For both classification and regression problems, we can train and test an ML model but oftentimes, models can seem to achieve good results during testing but when they get deployed in the real world, they fail in an utterly miserable way. One of the main reasons that this happens is due to overfitting (i.e. the model is great at predicting using data it has already seen but terrible at predicting using new data). To overcome this, we can use cross-validation beforehand to get a sense of how a model will perform in the real world. This involves splitting the dataset into a certain number of groups (also called folds) and then using each fold of the data to test a model that has been trained on all the other folds.
+
+To ensure that our hyperparameter tuning and cross-validation methodology is valid, we split up our dataset into three sets instead of two: a training set, a validation set, and a test set. Hyperparameter tuning is performed via cross-validation on the training and validation sets, and with the best hyperparameters, the test set is used to assess the performance of the model. 
+
+Note that the test set is not and should not be used within the tuning process, it should only be used as a set of data that our models have never been trained on and so assessing our model against the test set after hyperparameter tuning can provide a better measure of our model's generalisability to unseen data than just using a training and test set alone.
+
 ## Other
 
 While not strictly within the realm of "tuning", for the purposes of Phase 2, there are other ways that you can tune your model such as:
@@ -22,7 +31,3 @@ While not strictly within the realm of "tuning", for the purposes of Phase 2, th
     - [Scikit-learn Voting Classifier](https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier)
     - [Creating an Ensemble Voting Classifier with Scikit-learn](https://towardsdatascience.com/creating-an-ensemble-voting-classifier-with-scikit-learn-ab13159662d)
     - [How to Develop Voting Ensembles With Python](https://machinelearningmastery.com/voting-ensembles-with-python)
-
----
-
-Precision, recall etc. directly links to [ROC and AUC curves](https://learn.microsoft.com/en-nz/training/modules/optimize-model-performance-roc-auc/) where we tune our hyperparameters to put emphasis on one or the other, depending on our problem.

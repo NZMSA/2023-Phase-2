@@ -1,0 +1,10 @@
+﻿version: '3.4'
+
+services:
+  myapp:
+    image: back-end
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
