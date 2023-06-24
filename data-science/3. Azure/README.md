@@ -30,15 +30,15 @@ After you have completed the steps above, you should be directed to the [Educati
 
 ## Tasks
 
-TBA
+TBC by Mon 3 July
 
 ## Submission
 
-TBA
+TBC by Mon 3 July
 
 ## Marking Criteria
 
-TBA
+TBC by Mon 3 July
 
 ## Tips
 
