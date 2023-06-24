@@ -13,7 +13,7 @@ We would like you to evaluate your model using the following model evaluation te
 
 ## 1. Coefficient of determination ($R^{2}$)
 
-[$R^{2}$](https://en.wikipedia.org/wiki/Coefficient_of_determination) measures the strength and direction of the relationship between two variables (for our purposes, the model predictions (predicted y values) and the ground truth (actual y values)). A value of $-1$ or $1$ means that the variables have a strong negative or positive correlation, respectively, whereas a value of $0$ means that they have no correlation.
+The [coefficient of determination](https://en.wikipedia.org/wiki/Coefficient_of_determination) measures the strength and direction of the relationship between two variables (for our purposes, the model predictions (predicted y values) and the ground truth (actual y values)). A value of $-1$ or $1$ means that the variables have a strong negative or positive correlation, respectively, whereas a value of $0$ means that they have no correlation.
 
 $R^{2}$ can be calculated as shown below:
 ```python
