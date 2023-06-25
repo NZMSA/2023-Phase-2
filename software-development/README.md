@@ -5,19 +5,19 @@ Welcome to Phase 2! For software development, we have the following functional r
   -  A back-end API or service layer
   -  A persistent database
 
-Otherwise, the goal is simple - to build a fully functional full-stack application that does something awesome. You can talk to reddit API (RIP 👻 - that's no longer free), or discord API (yay, that's still free), or any third API of your choice to source any additional data you may or may not need.
+Otherwise, the goal is simple - to build a fully functional full-stack application that does something awesome. You can talk to the Reddit API (RIP 👻 - that's no longer free), or the Discord API (yay, that's still free), or any third API of your choice to source any additional data you may or may not need.
 
-The submission format will be a ten minute presentation with your live, deployed application, where you will be marked on the following criteria:
+The submission format will be a ten-minute presentation with your live, deployed application, where you will be marked on the following criteria:
 - Look and feel of the application UI
 - Responsiveness and UX
 - Authentication/Application security
 - Offline behaviour
-- Mobile device compatability
+- Mobile device compatibility
 - Complexity of the application
 - Cool factor 😎, or how awesome your idea is
 - A walkthrough of your codebase
 
-## Frond-end Application
+## Front-end Application
 ---
 We have put up some basic examples of how you may wish to structure your application components (see `TodoCard` and `TodoList`, and a basic implementation of storybook stories. You can find the examples in the front-end project. There are also some examples of how you can and should use something like redux toolkit (RTK) and RTK Query to handle your state, as well as an example of how to wire those together (see `App.tsx`).
 
@@ -28,12 +28,12 @@ You will find the following links helpful:
 - [RTK and RTK Query](https://redux-toolkit.js.org/introduction/getting-started)
 - [Material UI](https://mui.com/material-ui/getting-started/overview/)
   - This is a component library that adheres to Google's material design principles, and will be useful to provide a basic look and feel.
-  - Alternatives to this inclue [Mantine](https://mantine.dev/), [Ant Design](https://ant.design/), and [Tailwind](https://tailwindcss.com/docs/installation)
+  - Alternatives to this include [Mantine](https://mantine.dev/), [Ant Design](https://ant.design/), and [Tailwind](https://tailwindcss.com/docs/installation)
 - [Styled Components](https://styled-components.com/docs)
   - Material UI supports styled components, another way to declare styled html elements
   - The alternative is [Emotion](https://emotion.sh/docs/introduction)
 - [Redux Extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
-  - This will let you take a peek in to the redux state and play it forwards or backwards, useful for debugging state issues
+  - This will let you take a peek into the redux state and play it forwards or backwards, useful for debugging state issues
 - [Chromatic](https://www.chromatic.com/)
   - This is useful for handling any kind of snapshot testing of your storybook components 
 
@@ -48,11 +48,11 @@ You will find the following links helpful:
   - A library that automatically maps objects from one format to another
   - This will make converting inputs and outputs simpler
 - [Polly](https://github.com/App-vNext/Polly)
-  - A library that handles backofff and retry policies for talking to databases or any other dependencies for resiliency
+  - A library that handles backoff and retry policies for talking to databases or any other dependencies for resiliency
 - [EF Core](https://learn.microsoft.com/en-us/ef/core/)
   - A library that allows you to programmatically handle calls to your SQL database
 - [MediatR](https://github.com/jbogard/MediatR)
-  - A library for allowing you to better use DI
+  - A library for allowing you to better use dependency injection
 - [FluentValidation](https://fluentvalidation.net/)
   - A library for ensuring that any arguments and requests are properly validated
 
@@ -86,9 +86,9 @@ If you wish to start fresh, then the best way to do so would be to follow the ge
 
 ## Office Hours
 ---
-We will be online on discord during weekday evenings and some hours of the weekend to answer any questions that you may specifically have! Please check out the [discord server](https://discord.gg/pGPGGXQ6SC) for more information.
+We will be online on Discord during weekday evenings and some hours of the weekend to answer any questions that you may specifically have! Please check out the [discord server](https://discord.gg/pGPGGXQ6SC) for more information.
 
 ---
-Good Luck Everyone, and happy hacking!
+Good Luck everyone, and happy hacking!
 
 ![Liftoff GIF](https://i.giphy.com/media/xiN0BXMETVsx0AxTXt/giphy.webp)
