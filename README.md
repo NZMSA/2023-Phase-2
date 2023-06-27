@@ -17,6 +17,7 @@ Contents:
 - [Getting Started](https://github.com/NZMSA/2023-Phase-2#getting-started)
 - [Submission](https://github.com/NZMSA/2023-Phase-2#submission)
 - [Support](https://github.com/NZMSA/2023-Phase-2#support)
+- [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2023-Phase-2#microsoft-azure-sign-up-instructions)
 
 ## Getting Started
 
@@ -24,7 +25,7 @@ Contents:
 - Have completed all the Microsoft Learn modules as listed in the [Schedule from Phase 1](https://github.com/NZMSA/2023-Phase-1#schedule) for your chosen stream
 - Have downloaded all the [key tools from Phase 1](https://github.com/NZMSA/2023-Phase-1#key-tools) for your chosen stream
 - Can access the [Microsoft Learn modules from Phase 1](https://github.com/NZMSA/2023-Phase-1#schedule) to refer to as you complete Phase 2
-- Have signed up for an Azure for Students subscription using the [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2023-Phase-2#microsoft-azure-sign-up-instructions) below
+- Have signed up for an Azure for Students subscription using the [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2023-Phase-2#microsoft-azure-sign-up-instructions) below (Azure is required to be used by students in both streams of Phase 2)
 
 2. Create a repository inside your personal GitHub account to store all your work and clone this into your IDE
     - In your repository, we recommend that you create a folder for each part of your chosen stream to store your work for each part separately
@@ -54,14 +55,15 @@ We recommend that you refer to [Frequently asked questions and answers](https://
 
 Before starting Phase 2, you will need to sign up for an Azure for Students subscription using your institution email. This will give you $100 credit and free services to use within 12 months of signing up. After you use your credit, wait until the 12 months are over and sign up again if you’re still a student. You'll get $100 credit and free services just like before.
 
-If you do not have an Azure account using your institution email:
+If you **do not have an Azure account** using your institution email:
 1. Go to [Azure for Students](https://azure.microsoft.com/en-us/free/students) and click **Start for free**
 2. Sign in using your institution email
     - If you are based at the University of Auckland, your university email is already associated with a Microsoft account so do not create a new account using your university email, simply sign in.
     - If you are based at a different institution, check whether your institution has already provided you with a Microsoft account by trying to sign in first (if that doesn't work, create a new account using your institution email)
+    - If you have graduated and your institution no longer allows you to access your institution email, please use a personal email that you can regularly access. Note that signin up this way means you will not be signing up for Azure for Students subcription but rather, an [Azure free account](https://azure.microsoft.com/en-us/free/free-account-faq). To avoid incurring costs, we recommend that you only use and create services from the [Free service page](https://portal.azure.com/#blade/Microsoft_Azure_Billing/FreeServicesBlade) in the Azure portal.
 2. Follow the prompts to verify your academic status
 
-If you already have an Azure account using your institution email:
+If you **already have an Azure account** using your institution email:
 1. Sign in to [Azure for Students](https://azure.microsoft.com/en-us/free/students)
 2. You will most likely be shown how much credit you have remaining and when your Azure for Students subscription expires if it has not expired yet, or prompted to renew if it has expired.
 
