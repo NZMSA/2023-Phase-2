@@ -53,23 +53,26 @@ We recommend that you refer to [Frequently asked questions and answers](https://
 
 ## Microsoft Azure Sign-Up Instructions
 
-Before starting Phase 2, you will need to sign up for an Azure for Students subscription using your institution email. This will give you $100 credit and free services to use within 12 months of signing up. After you use your credit, wait until the 12 months are over and sign up again if you’re still a student. You'll get $100 credit and free services just like before.
+Before starting Phase 2, you will need to sign up for an Azure for Students subscription using your institution email using one of the methods described below. Azure for Students will give you $100 credit and free services to use within 12 months of signing up. After you use your credit, wait until the 12 months are over and sign up again if you’re still a student. You'll get $100 credit and free services just like before.
 
-If you **do not have an Azure account** using your institution email:
-1. Go to [Azure for Students](https://azure.microsoft.com/en-us/free/students) and click **Start for free**
-2. Sign in using your institution email
-    - If you are based at the University of Auckland, your university email is already associated with a Microsoft account so do not create a new account using your university email, simply sign in.
-    - If you are based at a different institution, check whether your institution has already provided you with a Microsoft account by trying to sign in first (if that doesn't work, create a new account using your institution email)
-    - If you have graduated and your institution no longer allows you to access your institution email, please use a personal email that you can regularly access. Note that signin up this way means you will not be signing up for Azure for Students subcription but rather, an [Azure free account](https://azure.microsoft.com/en-us/free/free-account-faq). To avoid incurring costs, we recommend that you only use and create services from the [Free service page](https://portal.azure.com/#blade/Microsoft_Azure_Billing/FreeServicesBlade) in the Azure portal.
-2. Follow the prompts to verify your academic status
+1. If you **do not have an Azure account** using your institution email:
+    -  Go to [Azure for Students](https://azure.microsoft.com/en-us/free/students) and click **Start for free**
+    -  Sign in using your institution email
+        - If you are based at the University of Auckland, your university email is already associated with a Microsoft account so do not create a new account using your university email, simply sign in.
+        - If you are based at a different institution, check whether your institution has already provided you with a Microsoft account by trying to sign in first (if that doesn't work, create a new account using your institution email)
+    - Follow the prompts to verify your academic status
 
-If you **already have an Azure account** using your institution email:
-1. Sign in to [Azure for Students](https://azure.microsoft.com/en-us/free/students)
-2. You will most likely be shown how much credit you have remaining and when your Azure for Students subscription expires if it has not expired yet, or prompted to renew if it has expired.
+3. If you **already have an Azure account** using your institution email:
+    - Sign in to [Azure for Students](https://azure.microsoft.com/en-us/free/students)
+    - You will most likely be shown how much credit you have remaining and when your Azure for Students subscription expires if it has not expired yet, or prompted to renew if it has expired.
+
+5. If you have **graduated and your institution no longer allows you to access your institution email** or you are facing issues using your institution email:
+    - Please use a personal email that you can regularly access to sign up for an [Azure free account](https://azure.microsoft.com/en-us/free/free-account-faq). Note that signing up this way means you will not be signing up for an Azure for Students subcription. To avoid incurring costs, we recommend that you only use and create services from the [Free service page](https://portal.azure.com/#blade/Microsoft_Azure_Billing/FreeServicesBlade) in the Azure portal.
 
 After you have completed the steps above, you should be directed to the [Education page of the Azure portal](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=e940c73ae3ec44b1852cb836987cef3e#view/Microsoft_Azure_Education/EducationMenuBlade/~/overview) - this is where you can see how much credit you have remaining, how many days until your Azure for Students subscription expires, and other helpful resources. Please see [the FAQs](https://learn.microsoft.com/en-us/azure/education-hub/azure-dev-tools-teaching/program-faq#azure-for-students) regarding eligibility requirements and more useful information about Azure for Students.
 
-Keep an eye on your Azure spending! For all of the tasks in this part, you will not be charged anything or any charges you do incur will come from your $100 credit because we have designed this part to only use services available within Azure for Students (which are either always free or cost some amount to use that will be taken from your credit). 
+Note:
+- Keep an eye on your Azure spending! If you use Azure for Students, you will not be charged anything or any charges you do incur will come from your $100 credit because we have designed this part to only use services available within Azure for Students (which are either always free or cost some amount to use that will be taken from your credit). 
 
 - If you only use the services within Azure for Students, it will be extremely difficult for you to use up the entire $100 credit, but if your usage results in your credit being depleted to $0, you won't be able to get more credit until your Azure for Students subscription expires, and you'll have to move to [pay as you go](https://azure.microsoft.com/en-gb/free/students/?WT.mc_id=academic-9938-cxa).
 
