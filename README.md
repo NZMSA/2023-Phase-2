@@ -40,6 +40,7 @@ To complete the technical component of Phase 2 and submit evidence of your compl
 1. Ensure that you have:
 - Completed all parts of your chosen stream by checking that you have included all items in your repository, as stated in the folder for your chosen stream
 - Made your repository public so that it can be accessed by the MSA team for marking
+- Included all files needed to run your code inside your repository so that it's easy for the MSA team to mark your submission
 2. Submit this form by 11:59pm, Sunday 6 August: [MSA 2023 Phase 2 Submission (TBC)]()
 
 ## Support

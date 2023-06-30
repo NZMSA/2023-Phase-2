@@ -107,7 +107,7 @@ For each task, we will be making sure that you have met the criteria below.
         - ```python
             df = pd.read_csv("example.csv")
             df.head()
-            # Get more information about the dataset columns
+            # Get more information about the dataset columns such as their data types (column metadata and units are not provided as part of this task to allow for an unbiased exploration of data without knowing a lot of information about the features beforehand)
             df.info()
             ```
     - Visualise data
