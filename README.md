@@ -63,11 +63,11 @@ Before starting Phase 2, you will need to sign up for an Azure for Students subs
         - If you are based at a different institution, check whether your institution has already provided you with a Microsoft account by trying to sign in first (if that doesn't work, create a new account using your institution email)
     - Follow the prompts to verify your academic status
 
-3. If you **already have an Azure account** using your institution email:
+2. If you **already have an Azure account** using your institution email:
     - Sign in to [Azure for Students](https://azure.microsoft.com/en-us/free/students)
     - You will most likely be shown how much credit you have remaining and when your Azure for Students subscription expires if it has not expired yet, or prompted to renew if it has expired.
 
-5. If you have **graduated and your institution no longer allows you to access your institution email** or you are facing issues using your institution email:
+3. If you have **graduated and your institution no longer allows you to access your institution email** or you are facing issues using your institution email:
     - Please use a personal email that you can regularly access to sign up for an [Azure free account](https://azure.microsoft.com/en-us/free/free-account-faq). Note that signing up this way means you will not be signing up for an Azure for Students subcription. To avoid incurring costs, we recommend that you only use and create services from the [Free service page](https://portal.azure.com/#blade/Microsoft_Azure_Billing/FreeServicesBlade) in the Azure portal.
 
 After you have completed the steps above, you should be directed to the [Education page of the Azure portal](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=e940c73ae3ec44b1852cb836987cef3e#view/Microsoft_Azure_Education/EducationMenuBlade/~/overview) - this is where you can see how much credit you have remaining, how many days until your Azure for Students subscription expires, and other helpful resources. Please see [the FAQs](https://learn.microsoft.com/en-us/azure/education-hub/azure-dev-tools-teaching/program-faq#azure-for-students) regarding eligibility requirements and more useful information about Azure for Students.

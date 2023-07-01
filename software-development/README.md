@@ -72,6 +72,8 @@ The back-end folder is a C# 7 Web API project that has been set up as an example
   - remove the contexts from the `Contexts` folder
   - remove all models from the `Models` folder
 
+Feel free to refer to the past 3 years of [past MSA workshops](https://www.youtube.com/@microsoftstudentacceleratornz/videos) to help you complete this phase!
+
 ### Starting Fresh
 ---
 If you wish to start fresh, then the best way to do so would be to follow the getting started instructions for these links:

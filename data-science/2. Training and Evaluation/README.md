@@ -70,7 +70,11 @@ If you would like to extend yourself (and potentially attain a mark greater than
         - K-nearest neighbours
         - Lasso regression
         - Gradient boosting
-        - Neural network (refer to this Microsoft Learn module for more information: [Train and evaluate deep learning models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models))
+        - Neural network - for more information, please refer to: 
+            - [This Microsoft Learn module](https://learn.microsoft.com/en-us/training/modules/train-evaluate-deep-learn-models)
+            - These MSA workshops:
+                - [Video 1](https://www.youtube.com/watch?v=3Bsl2U-23-k)
+                - [Video 2](https://www.youtube.com/watch?v=6I2kU4Y1tAA)
     - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters. 
     - If you decide to do this bonus task, explain what you did and show the performance of each model in your notebook compared to the performance of the model you initially built.
 
