@@ -32,3 +32,18 @@ To get started with Phase 2 of the Data Science stream:
 - Don't be overwhelmed by everything you have to do! We don't expect most people to complete absolutely everything within the given timeframe, so do as much as you can across all 3 parts!
 - The bonus tasks are your time to shine and show us what you have learned, so create something you can be proud of and include in your portfolio! Don't worry if you can't get to these though, keep in mind that we're marking students across a wide range of years, degrees, and skill levels, so we'll take your personal circumstances into consideration!
 - There are many good notebooks in [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=5) such as [this one](https://www.kaggle.com/code/odins0n/spaceship-titanic-eda-27-different-models) that you can take *inspiration* from. You can do this by selecting one of the datasets in the first link above, going to Code, then going through the most voted notebooks. You can learn a lot by reading these notebooks and get a sense of what a good notebook looks like.
+- Lastly, if the Microsoft Learn modules weren't enough for you, feel free to watch any of these workshops that we've made over the years that have detailed explanations and examples!
+    - Introduction to Artifical Intelligence, Machine Learning, and Data Science
+        - [Video 1 - first half](https://www.youtube.com/watch?v=N7dmGJfHS6M)
+        - [Video 2](https://www.youtube.com/watch?v=DlwDKzbt7PA)
+        - [Video 3](https://www.youtube.com/watch?v=pgl5Y1Olq4A)
+    - Exploratory Data Analysis
+        - [Video 1 - second half](https://www.youtube.com/watch?v=N7dmGJfHS6M)
+        - [Video 2](https://www.youtube.com/watch?v=9p8c0edPBXI)
+        - [Video 3 - first third](https://www.youtube.com/watch?v=K_EFlXDMkvA)
+        - [Video 4](https://www.youtube.com/watch?v=5wyIAAtaRbI)
+        - [Video 5 - second half](https://www.youtube.com/watch?v=dvZxu2PjOW8)
+    - Training and Evaluation
+        - [Video 1 - second two thirds](https://www.youtube.com/watch?v=K_EFlXDMkvA)
+    - Microsoft Azure
+        - [Video 1](https://www.youtube.com/watch?v=XVhQNmMFaHQ)

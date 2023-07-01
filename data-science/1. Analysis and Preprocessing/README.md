@@ -4,7 +4,7 @@ Believe it or not, data scientists spend the majority of their time on data prep
 
 This part is about exploratory data analysis (EDA) and data preprocessing. EDA is an integral aspect of any data science project. EDA allows data scientists to analyse, investigate, and extract key characteristics and trends within a dataset through data visualisations. Once you know things like the statistics and data formats of the columns within the dataset, the next step (i.e. preprocessing) becomes a lot easier! 
 
-Upon identifying and analysing the main characteristics and trends of a dataset, we can move onto data preprocessing which results in a dataset that's ready to be fed into a machine learning model for training and evaluation. The work you do for this part directly feeds into the second part where you use the datasets you've prepared for model training and evaluation.
+Upon identifying and analysing the main characteristics and trends of a dataset, we can move on to data preprocessing which results in a dataset that's ready to be fed into a machine learning model for training and evaluation. The work you do for this part directly feeds into the second part where you use the datasets you've prepared for model training and evaluation.
 
 ## Tasks
 
@@ -18,7 +18,7 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 
 ### 1. Find all variables and understand them
 
-- Load your chosen datasets from the [datasets folder]() into your notebook and show the first ten instances.
+- Load your chosen datasets from the [datasets folder](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/0.%20Resources/datasets) into your notebook and show the first ten instances.
 - Show (at minimum) the following without hard-coding the values:
     - Numerically
         - Mean
@@ -77,7 +77,7 @@ To complete this part, please include the following items in your repository:
 For each task, we will be making sure that you have met the criteria below. 
 
 - Find all variables and understand them
-    - You have read in your chosen datasets appropriately and imported the corect packages
+    - You have read in your chosen datasets appropriately and imported the correct packages
     - You have demonstrated a good understanding of your chosen datasets, by showing, analysing, or correctly calculating (but not limited to) the following:
         - number of instances and features
         - data types of each column
@@ -85,7 +85,7 @@ For each task, we will be making sure that you have met the criteria below.
 - Visualise data
     - You have used appropriate data visualisation techniques for each dataset (as taught in the Microsoft Learn modules) to explore the data and identify any trends, patterns, or anomalies
 - Clean data
-    - You have dealt with outlier, missing values, and non-significant features
+    - You have dealt with outliers, missing values, and non-significant features
     - You have converted non-numerical and categorical columns to numerical ones with techniques like one-hot encoding
     - You have provided some reasoning or justification for each step you have taken to clean the data
 - Identify correlated variables
@@ -107,7 +107,7 @@ For each task, we will be making sure that you have met the criteria below.
         - ```python
             df = pd.read_csv("example.csv")
             df.head()
-            # Get more information about the dataset columns
+            # Get more information about the dataset columns such as their data types (column metadata and units are not provided as part of this task to allow for an unbiased exploration of data without knowing a lot of information about the features beforehand)
             df.info()
             ```
     - Visualise data

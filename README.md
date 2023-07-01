@@ -1,4 +1,4 @@
-# 2023-Phase-2
+# 2023 Phase 2
 
 Welcome to Phase 2 of the 2023 MSA programme! This year, Phase 2 consists of two components:
 
@@ -17,6 +17,7 @@ Contents:
 - [Getting Started](https://github.com/NZMSA/2023-Phase-2#getting-started)
 - [Submission](https://github.com/NZMSA/2023-Phase-2#submission)
 - [Support](https://github.com/NZMSA/2023-Phase-2#support)
+- [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2023-Phase-2#microsoft-azure-sign-up-instructions)
 
 ## Getting Started
 
@@ -24,9 +25,12 @@ Contents:
 - Have completed all the Microsoft Learn modules as listed in the [Schedule from Phase 1](https://github.com/NZMSA/2023-Phase-1#schedule) for your chosen stream
 - Have downloaded all the [key tools from Phase 1](https://github.com/NZMSA/2023-Phase-1#key-tools) for your chosen stream
 - Can access the [Microsoft Learn modules from Phase 1](https://github.com/NZMSA/2023-Phase-1#schedule) to refer to as you complete Phase 2
-4. Create a repository inside your personal GitHub account to store all your work and clone this into your IDE
+- Have signed up for an Azure for Students subscription using the [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2023-Phase-2#microsoft-azure-sign-up-instructions) below (Azure is required to be used by students in both streams of Phase 2)
+
+2. Create a repository inside your personal GitHub account to store all your work and clone this into your IDE
     - In your repository, we recommend that you create a folder for each part of your chosen stream to store your work for each part separately
-5. Refer to the folder for each stream to get started:
+
+3. Refer to the folder for each stream to get started:
     - [Data Science](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science)
     - [Software Development](https://github.com/NZMSA/2023-Phase-2/tree/main/software-development)
 
@@ -36,6 +40,7 @@ To complete the technical component of Phase 2 and submit evidence of your compl
 1. Ensure that you have:
 - Completed all parts of your chosen stream by checking that you have included all items in your repository, as stated in the folder for your chosen stream
 - Made your repository public so that it can be accessed by the MSA team for marking
+- Included all files needed to run your code inside your repository so that it's easy for the MSA team to mark your submission
 2. Submit this form by 11:59pm, Sunday 6 August: [MSA 2023 Phase 2 Submission (TBC)]()
 
 The MSA programme strictly enforces academic integrity and students that do not submit their own work will first be notified with our concerns, and if your work is determined to be copied from someone/somewhere else and/or insufficiently different from others if you have collaborated or troubleshooted with other parties (including MSA team members and the content created by them in this repository), you may not be invited to any events and activities as part of the non-technical component of Phase 2.

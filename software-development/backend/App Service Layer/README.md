@@ -4,7 +4,7 @@ In a typical three-tier architecture, the service layer acts as a bridge between
 
 ## Dependency Injection
 
-In example 'Program.cs', we can find the following lines:
+In the example 'Program.cs', we can find the following lines:
 
 ```c#
 builder.Services.AddScoped<TodoItemService>();
@@ -15,7 +15,7 @@ The 'AddScoped' method means that a new instance of the service will be created 
 ## Implementation
 ### Service Class
 
-The 'TodoItemService.cs' is one of the service class. Both classes share a similar structure, including private field, constructuor and methods.
+The 'TodoItemService.cs' is one of the service class. Both classes share a similar structure, including private field, constructor and methods.
 
 ```c#
 private TodoItemContext _itemContext;
@@ -38,4 +38,4 @@ public async Task<TodoItem> CreateTodoItem(TodoItem item)
     return item;
 }
 ```
-Let us take this method as an example. It takes one TodoItem, adds it to 'TodoItems' collection in 'TOdoItemContext', saves changes to the database and return the new 'TodoItem'. The method is an asynchronously function, which is used to prevent blocking the main thread while saving the changes. Both Add() and SaveChangesAsync() are methods provided by Entity Framework Core. It is powerful and simplifies database operations.
+Let us take this method as an example. It takes one TodoItem, adds it to 'TodoItems' collection in 'TOdoItemContext', saves changes to the database and returns the new 'TodoItem'. The method is an asynchronous function, which is used to prevent blocking the main thread while saving the changes. Both Add() and SaveChangesAsync() are methods provided by Entity Framework Core. It is powerful and simplifies database operations.
