@@ -5,3 +5,4 @@ numpy
 pandas
 scikit-learn
 seaborn
+xgboost
