@@ -8,7 +8,6 @@ export const api = createApi({
     baseQuery: fetchBaseQuery({
          baseUrl: process.env.REACT_APP_API_BASE_URL,
         prepareHeaders: (headers) => {
-            console.log(headers);
              headers.set('authorization', `Basic ${btoa('test:test')}`);
              return headers;
         }
