@@ -27,8 +27,9 @@ Contents:
 - Can access the [Microsoft Learn modules from Phase 1](https://github.com/NZMSA/2023-Phase-1#schedule) to refer to as you complete Phase 2
 - Have signed up for an Azure for Students subscription using the [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2023-Phase-2#microsoft-azure-sign-up-instructions) below (Azure is required to be used by students in both streams of Phase 2)
 
-2. Create a repository inside your personal GitHub account to store all your work and clone this into your IDE
+2. Create a repository inside your personal GitHub account to store all your work and clone that repository into your IDE (ignore any and all other branches, everything you need is in the main branch)
     - In your repository, we recommend that you create a folder for each part of your chosen stream to store your work for each part separately
+    - Alternatively, feel free to clone this repository and then delete the folder for the stream you are not doing
 
 3. Refer to the folder for each stream to get started:
     - [Data Science](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science)
@@ -79,6 +80,6 @@ Please see [the FAQs](https://learn.microsoft.com/en-us/azure/education-hub/azur
 Note:
 - Keep an eye on your Azure spending! If you use Azure for Students, you will not be charged anything or any charges you do incur will come from your $100 credit because we have designed this part to only use services available within Azure for Students (which are either always free or cost some amount to use that will be taken from your credit). 
 
-- If you only use the services within Azure for Students, it will be extremely difficult for you to use up the entire $100 credit, but if your usage results in your credit being depleted to $0, you won't be able to get more credit until your Azure for Students subscription expires, and you'll have to move to [pay as you go](https://azure.microsoft.com/en-gb/free/students/?WT.mc_id=academic-9938-cxa).
+- If you only use the services within Azure for Students, it will be extremely difficult for you to use up the entire $100 credit, but if your usage results in your credit being depleted to $0, you won't be able to get more credit until your Azure for Students subscription expires, and you'll have to move to [pay as you go](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-9938-cxa).
 
 - MSA is not responsible for and will not refund or cancel any costs you personally incur due to services that you use. You may also refer to [Azure Sponsorships](https://www.microsoftazuresponsorships.com) website to keep track of your Azure for Students subscription usage.

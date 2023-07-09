@@ -11,7 +11,7 @@ Hyperparameters are set by you, the data scientist, based on your intuition or p
 - [Scikit-learn hyperparameter optimisers](https://scikit-learn.org/stable/modules/classes.html#hyper-parameter-optimizers) (we recommend grid search, randomised search, or parameter grid)
 - Manually change the hyperparameters and perform cross-validation yourself (not recommended since Scikit-learn allows you to do this with just one function call, but a valuable learning exercise!)
 - Any other approaches from the Microsoft Learn in modules in Phase 1, in particular for classification:
-    - [Hyperparameters in classification](https://learn.microsoft.com/en-nz/training/modules/machine-learning-architectures-and-hyperparameters/6-hyperparameters)
+    - [Hyperparameters in classification](https://learn.microsoft.com/en-us/training/modules/machine-learning-architectures-and-hyperparameters/6-hyperparameters)
     - [Measure and optimize model performance with ROC and AUC](https://learn.microsoft.com/en-us/training/modules/optimize-model-performance-roc-auc)
 
 

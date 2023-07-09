@@ -24,14 +24,15 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
         - Mean
         - Standard Deviation
     - Graphically
-        - Plots of any numerical columns e.g. bar plots, histograms, box and whisker plots etc.
+        - Plots of any numerical columns in the raw dataset e.g. bar plots, histograms, box and whisker plots etc.
 - Convert the data types of any columns (if needed) to the most appropriate data type for doing preprocessing on those columns
     - Note that all values of any feature being fed into a machine learning model should be numerical (not strings, booleans, lists etc.)
 
 ### 2. Visualise data
 
-- Visualise the data and identify any trends, patterns, or anomalies
+- Visualise the converted data from the task above and identify any trends, patterns, or anomalies
     - Note that there are many different ways to visualise data, so we recommend that you go through the Microsoft Learn modules to see what kinds of visualisations you have learned about and create those (or something similar) for this task.
+    - If any columns of the raw data were already numeric, then you may not have modified them further and have already graphicaly shown them in the task above (in which case skip this task for those columns, as we are only interested in how you visualise the non-numerical columns that you converted in the task above)
 
 ### 3. Clean data
 
@@ -65,7 +66,7 @@ If you would like to extend yourself (and potentially attain a mark greater than
 To complete this part, please include the following items in your repository:
 
 1. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen classification dataset
-2. A Jupyter notebook A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen regression dataset
+2. A Jupyter notebook (.ipynb) containing your EDA and preprocessing work for your chosen regression dataset
 3. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
     - Think of this as a TL;DR for your notebooks.
     - While there is no word limit, we may penalise summaries that are more than 500 words long (we have a lot of submissions to get through, so the more concise you can be, the better!), or do not provide a sufficient overview of everything you have done. A key skill to master in data science is your ability to communicate technical concepts in a clear way.
@@ -117,6 +118,7 @@ For each task, we will be making sure that you have met the criteria below.
             import matplotlib.pyplot as plt
             ```
     - Clean data
+        - [Handling categorical features](https://wandb.ai/wandb_fc/kaggle_tutorials/reports/Handling-Categorical-Features-With-Examples--VmlldzoyMTY4NDgz)
         - Units 2 and 3 of [Explore and analyze data with Python](https://learn.microsoft.com/en-us/training/modules/explore-analyze-data-with-python/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50)
         - Unit 5 of [Data collection and manipulation](https://learn.microsoft.com/en-us/training/modules/collect-manipulate-data-python-nasa/?ns-enrollment-type=Collection&ns-enrollment-id=n2kyanp2128q50)
     - Identify correlated variables
