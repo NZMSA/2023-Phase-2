@@ -1,253 +1,73 @@
 # Part 3 - Microsoft Azure
 
-Welcome to the third and final part of Phase 2 Data Science! This part will involve you doing (almost) everything you've done in the first two parts in the cloud! 
+Welcome to the third and final part of Phase 2 for the Data Science stream! This part will involve you doing (almost) everything you've done in the first two parts, except in the cloud! 
 
 Microsoft's cloud computing platform is called Azure and this part will specifically focus on Azure Machine Learning, a service within Azure that allows you to do everything from running Jupyter notebooks and training machine learning models in the cloud to logging evaluation metrics across multiple iterations of model development and deploying models from within the Azure portal (i.e. the website you'll use to access Azure from your web browser) or from your own code.
 
-We hope you find that doing data science in the cloud makes several things easier and faster to accomplish while unlocking some useful features that can help you as a data scientist deliver more value in less time! The features within Azure Machine Learning that this part will focus on are:
-
-- **Notebooks** for saving and executing Jupyter notebooks
-- **AutoML** for automatically training and tuning models
-- **Runs** for tracking and visualising evaluation metrics like precision, recall, ROC, AUC etc.
-- **Deployment** for putting models into production using Docker containers from either the Azure portal or an IDE
-
-- AutoML (finding best model via experiments with different features, algorithms, and parameters)
-- Designer (no-code)
-- Runs (logging of hyperparameters and other settings across multiple experiments consisting of 1 or more runs, and visualisations of metrics) 
-- Jobs (running scripts to e.g. tune hyperparameters, run a pipeline etc) 
-- Pipelines (out-of-the-box or customisable workflows for data prep, train, test, deployment) 
-- Workspaces (needed in order to run Azure ML Studio I.e. the “browser” version of Azure ML, setup part of a module)
+We hope you find that doing data science in the cloud makes several things easier and faster to accomplish while unlocking some useful features that can help you as a data scientist deliver more value in less time!
 
 ## Getting Started
 
-1. Before starting the tasks below, ensure that you have signed up for an Azure for Students subscription using the [Microsoft Azure Sign-Up Instructions](https://github.com/NZMSA/2023-Phase-2#microsoft-azure-sign-up-instructions).
+1. Complete [Getting Started with Azure Machine Learning](../0.%20Resources/docs/getting-started-with-azure-ml.md)
 
-- Create workspace: https://portal.azure.com/#create/Microsoft.MachineLearningServices
+2. Read the comments and code in the [example.ipynb](./example.ipynb) notebook that we have provided for you to practice deploying a model onto Azure. Feel free to adapt the code within this notebook for your own work.
+
+3. Choose one dataset from your two chosen datasets to use for this part and complete the tasks below. Make sure you have completed the first two parts and are using your processed dataset for this part.
 
 ## Tasks
 
-- Train and evaluate one model that you developed in the first two parts (either for your chosen classification dataset or regression dataset)
-- Create and run training script 
-- Register a model
+If you have completed the first two parts, you are well on your way to completing the technical component of Phase 2! This third part is a smaller one since we recognise that you may have spent most of your time on the first two parts, and also Azure Machine Learning consists of a deep set of tools that could take weeks to cover in themselves.
+
+The tasks below correspond to the tools visible in your workspace in Azure Machine Learning Studio, please complete the tasks with the help of the resources provided.
+
+1. Use [Endpoints](https://ml.azure.com/endpoints/realtime) to create a real-time endpoint for your trained model from the previous part - resources:
+    - [Deploy real-time machine learning services with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/register-and-deploy-model-with-amls)
+    - [Deploy a model to a managed online endpoint](https://learn.microsoft.com/en-us/training/modules/deploy-model-managed-online-endpoint)
+    - [Deploy and score a machine learning model by using an online endpoint](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints)
+    - [2021 Phase 2 - Model Deployment](https://github.com/NZMSA/2021-Phase-2-Data-Science/tree/master/4.%20Deploy%20Model%20onto%20Azure)
+    - [deploy-local](https://github.com/Azure/azureml-examples/tree/main/v1/python-sdk/tutorials/deploy-local)
+
+2. Complete at least ONE of the following tasks below to the best of your ability and time available:
+    - Use [Models](https://ml.azure.com/model/list) and [Notebooks](https://ml.azure.com/fileexplorerAzNB) to run your Jupyter notebook/s for model training and evaluation, and register your trained model in Azure - resources:
+        - [Train a machine learning model with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/train-local-model-with-azure-mls)
+        - [Run a training script as a command job in Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/run-training-script-command-job-azure-machine-learning)
+    - Use [Jobs](https://ml.azure.com/experiments) to run a script for tuning hyperparameters - resources:
+        - [Tune hyperparameters with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-with-azure-machine-learning)
+        - [Perform hyperparameter tuning with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines)
+        - [Track model training with MLflow in jobs](https://learn.microsoft.com/en-us/training/modules/train-models-training-mlflow-jobs)
+    - Use [Automated ML](https://ml.azure.com/automl/welcome) to automatically train and tune models to find the best one via experiments with different features, algorithms, and parameters - resources:
+        - [Find the best classification model with Automated Machine Learning](https://learn.microsoft.com/en-us/training/modules/find-best-classification-model-automated-machine-learning)
+        - [Automate machine learning model selection with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/automate-model-selection-with-azure-automl)
+        - [automl-with-azureml](https://github.com/Azure/azureml-examples/tree/main/v1/python-sdk/tutorials/automl-with-azureml)
 
 ## Submission
 
-TBC by Mon 3 July
+To complete this part, please include the following items in your repository:
 
-To be determined after researching what can be shared outside of Azure with us e.g. their entire workspace (ideal, so that we can see everything they’ve done) 
+- A Jupyter notebook (.ipynb) containing:
+    - The API endpoint for your deployed model, with details on how to format the input data for your specific processed dataset and model (so that we can test your endpoint for marking purposes).
+    - Any code, written explanations, results, screenshots of your Azure workspace (e.g. hyperparameter tuning results, precision and recall, ROC/AUC curves), and/or anything else to explain the steps you took and the outputs you generated.
+
+Note: please do not delete or turn off any resources you have created until the team has completed marking. Once the team has completed marking we will inform you, after which you may clean up your resources as explained in [this section](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-azure-ml-in-a-day?view=azureml-api-2#clean-up-resources) of the Azure Machine Learning documentation.
 
 ## Marking Criteria
 
-- Upload the model to Azure Machine Learning Studio and expose the model as an API which can accept a row of data like the one present in your chosen dataset and output a classification/regression result back to the user.
-- Deploy your model
+1. Task Completion
+    - Written an entry script that creates an endpoint for the student's processed dataset and model
+    - The endpoint takes input data as specified by the student and produces a result (either a label (classification) or value (regression))
+    - The student has completed at least one of the tasks in the list above (marking for this will be based on a comparative evaluation against other students)
 
-You will need to submit a link to your Azure Notebook (make sure it's set to public) to us for marking.
-
-
+2. Presentation
+    - Your notebook/s and the code within them must be well-commented so that someone looking at your notebook/s for the first time can easily understand and follow along with what you did
+        - Note that "well-commented" means that you have provided easily understandable explanations for what the results of your code mean or what you have inferred from them
+        - We may penalise notebooks that only contain code and nothing else.
 
 ## Tips
 
-TBC by Mon 3 July
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Getting Started:
-Firstly, we need to setup Azure to host our machine learning model:
-
-1. Go to [Microsoft Azure portal page](https://azure.microsoft.com/en-us/get-started/azure-portal)
-
-![azure.portal](./images/portal_page.png)
-
-2. Create a resource and search for 'Azure Machine Learning' 
-
-![azure.machine.learning](./images/ML_page.png)
-
-
-3. Create the Machine Learning resource by filling in the details. Make sure you select the right region as **'Australia East'**. Other than that, you can name whatever they make sense to your project.
-
-
-![azure.workplace_details](./images/workplace_details_page.png)
-
-4. Click 'Review + Create'. After validation, it would take you to the deployment page. It would take around 1 minute for the whole deployment process. Wait till it show **'Your deployment is complete'**.
-
-![azure.deployment_details](./images/deployment_ended.png)
-
-5. Click 'Go to resources' and then click 'Launch studio'. This would take you the Machine Learning studio, which is a visual development environment for creating, testing, and deploying machine learning models without extensive coding. It offers pre-built modules, a drag-and-drop interface, experiment tracking, collaboration features, and integration with other Azure services.
-
-![azure.studio_details](./images/ML_studio.png)
-
-
-## Model Training:
-
-Before we deploy our model we would first need to train one. In this example, I trained a XGBoost model on the well known iris dataset. 
-
-For task 3, you are allowed to choose one dataset to train in the dataset list. If you are stuck you can access the [Official Microsoft Documentation](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=azcli) which will guide you to deploying any type of machine learning model.
-
-Feel free to use this sample code and practice how to train a model then deploy it :)
-
-```python
-# Example model training on the iris dataset 
-# Load libraries for creating a xgboost model of the iris dataset 
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
-from xgboost import XGBClassifier
-
-# Load the data 
-iris = datasets.load_iris() 
-X = iris.data                
-y = iris.target      
-
-# Split data into test and train 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
-
-# Create XGBoost classifier and save model 
-xgbClf = XGBClassifier(use_label_encoder = False)
-xgbClf.fit(X_train, y_train)
-xgbClf.save_model("model.json")
-```
-
-
-## Model Deployment:
-
-Assuming that we have a fully trained machine learning model, we can deploy it in Python(you can decide either Jupter Notebook or local) or online through the Machine Learning Studio. Deploying via Python code is easier and more well documented, so I recommend you do that. 
-
-1. First we need the azureml-core Python module. Install this in a command window of your choice 
-
-   ```pip install azureml-core``` 
-
-2. Navigate to the azure portal and find the machine learning resource that you created earlier and download the ```config.json``` file. Save this to your working directory as we will need this config file to connect our machine learning workspace and deploy our model.
-
-![workspace.connect](./images/download_json.png)
-
-3. Connect to our workspace
-
-```python
-# Load workspace 
-from azureml.core import Workspace
-ws = Workspace.from_config(path = "config.json")
-print(ws)
-```
-If you run this code in Jupyter Notebook, it should open a web browser window where you have to sign-in to Azure. Follow the instructions there and you should see an output Workspace.create(...) if you connected successfully. 
-
-4. Register our model that we saved earlier with the appropriate model name 
-
-```python
-from azureml.core.model import Model
-
-# Register model
-model = Model.register(ws, model_name = "iris-xgboost", model_path = "model.json")
-```
-
-5. Registering the model merely uploads a model file onto the cloud, but there is no code/instructions to interface with it. We need to create an entry script file (scoring file) that will run when we receive data. This file should load the model, process the data and return the model's response to the client. ***The script is therefore specific to your model***. According to the documentation, the entry script requires two things:
-
-   1. Loading your model using a function called ```init()```
-   2. Running model on the input data using a function called ```run()```
-
-   For our iris example, we would do something like this 
-
-   ```python
-   # Load libraries 
-   import json
-   import os 
-   import numpy as np
-   from xgboost import XGBClassifier
-   
-   # Since model works with label encoded data, we can create a dictionary to get the acutal class names
-   classes = {0: "setosa", 1: "versicolor", 2: "virginica"}
-   
-   # 1. Requried init function
-   def init():
-       # Create a global variable for loading the model
-       global model
-       model = XGBClassifier(use_label_encoder = False)
-       model.load_model(os.path.join(os.getenv("AZUREML_MODEL_DIR"), "model.json"))
-   
-   # 2. Requried run function
-   def run(request):
-       # Receive the data and run model to get predictions 
-       data = json.loads(request)
-       data = np.array(data["data"])
-       res = model.predict(data)
-       return [classes.get(key) for key in res]
-   ```
-
-   ***For your project, you must be able to write an entry script that works specifically to your model.*** 
-
-6. After registering our model, we need to setup the remote virtual environment. Under the hood, Microsoft is creating a docker containing that contains our Python environment running our model. Interfacing with our model is achieved via REST API. 
-
-   1. We want the remote environment to have exactly the same Python versions/modules as our local machine. I have noticed that using the ```Environment.from_existing_conda_environment()``` method results in deployment errors, but is the easiest way so try this first.
-   2. If you are receiving deployment errors then try the second method which is to manually add packages as required.
-
-```python
-from azureml.core import Environment
-from azureml.core.conda_dependencies import CondaDependencies
-from azureml.core.model import InferenceConfig
-
-# 1. Create environment from existing conda environment 
-env = Environment.from_existing_conda_environment(name = "iris-xgboost",
-                                                conda_environment_name = "azure")
-
-# 2. Create environment 
-env = Environment(name = "iris-xgboost")
-conda_dep = CondaDependencies()
-conda_dep.add_conda_package("numpy")
-conda_dep.add_conda_package("xgboost")
-env.python.conda_dependencies = conda_dep
-
-dummy_inference_config = InferenceConfig(
-    environment = env,
-    source_directory = "./source_dir",
-    entry_script = "./echo_score.py",
-)
-```
-
-7. Now we are ready to deploy our model!
-
-```python
-from azureml.core.webservice import AciWebservice
-# NOTE: You may need more CPU or memeory depending on what kinds of model you end up using
-aci_config = AciWebservice.deploy_configuration(cpu_cores = 1, memory_gb = 1)
-service = Model.deploy(
-    ws,
-    "iris-xgboost",
-    [model],
-    dummy_inference_config,
-    aci_config,
-    overwrite = True,
-)
-service.wait_for_deployment(show_output = True)
-```
-
-Once the model has been deployed, you should be able to see it under the endpoints tab in the Azure ML studio.
-
-8. We can use any tool now to test our endpoint using REST API calls. If it returns data then you have successfully deployed and hosted your very first ML model! 
-
-For example, for testing in python:
-```python
-import requests
-import json
-
-uri = service.scoring_uri
-requests.get("http://16a75b9c-e6cc-47cd-89f6-215e077c43a9.australiaeast.azurecontainer.io/score")
-headers = {"Content-Type": "application/json"}
-data = {
-    "data": [[6.1, 2.8, 4.7, 1.2]],
-}
-data = json.dumps(data)
-response = requests.post(uri, data = data, headers = headers)
-print(response.json())
-```
-
-***NOTE: You may want to stop the container instance that hosts your model when not in use because it costs money to host the model.***
-
-***Just find the container instance of your model and press the stop button. You can press start whenever you want to use your model.***
+- This part relies heavily on the Microsoft Learn modules from Week 5 of Phase 1! In particular, we recommend that you go through the following resources to support your work:
+    - [Quickstart: Get started with Azure Machine Learning](https://learn.microsoft.com/en-gb/azure/machine-learning/tutorial-azure-ml-in-a-day)
+    - Azure Machine Learning Hands-On Exercises from Phase 1 Microsoft Learn modules
+        - https://microsoftlearning.github.io/mslearn-azure-ml
+        - https://microsoftlearning.github.io/mslearn-dp100
+    - Units 2 and 3 of [Introduction to Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-ml/2-what-is-azure-ml)
+    - Unit 6 of [Explore Azure Machine Learning workspace resources and assets](https://learn.microsoft.com/en-us/training/modules/explore-azure-machine-learning-workspace-resources-assets/5-run-jobs)
