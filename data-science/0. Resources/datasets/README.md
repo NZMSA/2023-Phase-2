@@ -8,7 +8,9 @@ You may not use other datasets, as these datasets have been chosen by the MSA te
 - Keeping the list of datasets small allows us to mark students fairly and compare student's work across submissions to ensure that students are getting the credit they deserve, or implement scaling procedures if needed
 - Keeping the list of datasets small allows you to work within creative constraints and focus on your analysis and modelling skills, as opposed to dealing with issues pertaining to specific datasets or work with datasets you may have already used in the past
 
-Please note that the details of the scenarios described below are fictional.
+Please note:
+- Some features contain column headers such as Var_1 that don't make it clear what data in those columns mean. You don't need to guess what those columns inherently mean, you can simply refer to those columns by their headers when doing anything with data in those columns as part of the tasks to help you understand their purpose and effect on the target variable (e.g. looking for distinct categories, numerical values, patterns, or relationships/correlations of those columns with other variables).
+- The details of the scenarios described below are fictional.
 
 ## Classification
 
