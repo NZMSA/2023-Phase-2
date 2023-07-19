@@ -130,6 +130,7 @@ For each task, we will be making sure that you have met the criteria below.
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
             ```
     - Choose an algorithm
+        - [Scikit-learn models for supervised learning](https://scikit-learn.org/stable/supervised_learning.html): This is to help you decide what model to use for classification and regression (as stated above, we recommend random forest or logistic regression for your chosen classification dataset, and linear regression for your chosen regression dataset)
         - [No Free Lunch Theorem (NFLT)](https://robertmarks.org/Classes/ENGR5358/Papers/NFL_4_Dummies.pdf): When it comes to data modelling, a beginner's question is always "What is the best ML algorithm to learn?" To this, a beginner must learn the NFLT which states that there is no one algorithm that can achieve the best results in all problems. So the best approach is to try different ML algorithms, tune them, and compare them against each other for our specific problem. We can have an intuition on what type of model can be used by understanding what type of problem we are dealing with.
         - ```python
             from sklearn.linear_model import LogisticRegression
