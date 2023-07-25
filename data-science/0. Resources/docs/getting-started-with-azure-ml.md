@@ -11,6 +11,7 @@ These steps show you how to create an Azure Machine Learning workspace, a resour
 3. Go to [Create a machine learning workspace](https://portal.azure.com/#create/Microsoft.MachineLearningServices) (you should see something similar to the image below), then fill in the fields with the following details, and click "Review + Create" then "Create":
     - Subscription: Azure for Students
     - Resource group: Create a new resource group and name it _MSA2023-Phase2-Azure_
+        - If you're unable to create a new resource group from the link above, go to [this link](https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups), click "Create" to create a new resource group, type in the name of your resource group as specified above, then click "Review + Create" then "Create". When you go back to the link above, you should now see the resource group you created in the Resource group dropdown, which you can select for your workspace.
     - Workspace name: Name your workspace _MSA2023-Phase2-Azure_
     - Region: Australia East
     - Leave all other settings as they are
