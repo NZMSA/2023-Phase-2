@@ -31,6 +31,8 @@ These steps show you how to create an Azure Machine Learning workspace, a resour
 
 ![azure.studio_details](../images/studio_home.png)
 
+7. If you've come to this README from the Part 3 README of the Data Science stream, head back to the [Getting Started section](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/3.%20Microsoft%20Azure#getting-started) to continue with Part 3.
+
 For more details, please visit the following links:
 - [Azure Machine Learning documentation](https://learn.microsoft.com/en-us/azure/machine-learning)
 - [Azure Machine Learning workspaces](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-machine-learning-service/2-azure-ml-workspace)
