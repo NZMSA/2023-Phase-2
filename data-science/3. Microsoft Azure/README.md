@@ -18,7 +18,7 @@ This part is smaller since we recognise that you may have spent most of your tim
 
 1. Read the comments and code in the [example notebook](./example.ipynb) that we have provided for you to practice deploying a model onto Azure, and adapt the code within this notebook for your own work in the next task.
 
-2. Use [Endpoints](https://ml.azure.com/endpoints/realtime) to create a real-time endpoint for your trained model from part 2 - resources:
+2. Go to [Endpoints](https://ml.azure.com/endpoints/realtime) and use the notebook above to create a real-time endpoint for one of your trained models from part 2 - resources:
 
     - [Deploy real-time machine learning services with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/register-and-deploy-model-with-amls)
 
@@ -26,18 +26,18 @@ This part is smaller since we recognise that you may have spent most of your tim
 
     - [Deploy and score a machine learning model by using an online endpoint](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints)
 
-3. Complete at least ONE of the following tasks below to the best of your ability and time available:
+3. Complete at least ONE of the following to the best of your ability and time available:
 
-    - Use [Models](https://ml.azure.com/model/list) and [Notebooks](https://ml.azure.com/fileexplorerAzNB) to run your Jupyter notebook/s for model training and evaluation, and register your trained model in Azure - resources:
+    - Go to [Models](https://ml.azure.com/model/list) and [Notebooks](https://ml.azure.com/fileexplorerAzNB) to run your Jupyter notebook/s for model training and evaluation, and register your trained model in Azure - resources:
         - [Train a machine learning model with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/train-local-model-with-azure-mls)
         - [Run a training script as a command job in Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/run-training-script-command-job-azure-machine-learning)
 
-    - Use [Jobs](https://ml.azure.com/experiments) to run a script for tuning hyperparameters - resources:
+    - Go to [Jobs](https://ml.azure.com/experiments) to run a script for tuning hyperparameters - resources:
         - [Tune hyperparameters with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-with-azure-machine-learning)
         - [Perform hyperparameter tuning with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/perform-hyperparameter-tuning-azure-machine-learning-pipelines)
         - [Track model training with MLflow in jobs](https://learn.microsoft.com/en-us/training/modules/train-models-training-mlflow-jobs)
 
-    - Use [Automated ML](https://ml.azure.com/automl/welcome) to automatically train and tune models to find the best one via experiments with different features, algorithms, and parameters - resources:
+    - Go to [Automated ML](https://ml.azure.com/automl/welcome) to automatically train and tune models to find the best one via experiments with different features, algorithms, and parameters - resources:
         - [Find the best classification model with Automated Machine Learning](https://learn.microsoft.com/en-us/training/modules/find-best-classification-model-automated-machine-learning)
         - [Automate machine learning model selection with Azure Machine Learning](https://learn.microsoft.com/en-us/training/modules/automate-model-selection-with-azure-automl)
         - [automl-with-azureml](https://github.com/Azure/azureml-examples/tree/main/v1/python-sdk/tutorials/automl-with-azureml)
@@ -46,8 +46,9 @@ This part is smaller since we recognise that you may have spent most of your tim
 
 To complete this part, please include the following items in your repository:
 
+- An entry script (score.py) for your model
 - A Jupyter notebook (.ipynb) containing:
-    - The things requested in the example notebook for marking
+    - Code that calls your real-time endpoint (like in Step 7 of the example notebook)
     - Any other code, written explanations, results, screenshots of your Azure workspace (e.g. hyperparameter tuning results, precision and recall, ROC/AUC curves), and/or anything else to explain the steps you took and the outputs you generated
 
 ## Marking Criteria
