@@ -39,10 +39,17 @@ Contents:
 
 To complete the technical component of Phase 2 and submit evidence of your completion:
 1. Ensure that you have:
-- Completed all parts of your chosen stream by checking that you have included all items in your repository, as stated in the folder for your chosen stream
-- Made your repository public so that it can be accessed by the MSA team for marking
+- Completed all parts of your chosen stream/s by checking that you have included all items in your repository, as stated in the folder for your chosen stream
+    - Software Development
+        - [Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/software-development#:~:text=The%20submission%20format)
+    - Data Science
+        - [Analysis and Preprocessing Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/1.%20Analysis%20and%20Preprocessing#submission)
+        - [Training and Evaluation Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/2.%20Training%20and%20Evaluation#submission)
+        - [Microsoft Azure Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/3.%20Microsoft%20Azure#submission)
+- Made your repository/ies and any other links you want to submit public so that they can be accessed by the MSA team for marking
+    - You can check that all your links are publicly accessible by opening them in the Incognito/Private mode of your browser
 - Included all files needed to run your code inside your repository so that it's easy for the MSA team to mark your submission
-2. Submit this form by 11:59pm, Sunday 6 August: [MSA 2023 Phase 2 Submission (TBC)]()
+2. Submit this form by 11:59pm, Sunday 6 August: [MSA 2023 Phase 2 Submission](https://forms.office.com/r/XSALRL2AC4)
 
 The MSA programme strictly enforces academic integrity and students that do not submit their own work will first be notified with our concerns, and if your work is determined to be copied from someone/somewhere else and/or insufficiently different from others if you have collaborated or troubleshooted with other parties (including MSA team members and the content created by them in this repository), you may not be invited to any events and activities as part of the non-technical component of Phase 2.
 
