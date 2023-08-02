@@ -83,7 +83,7 @@ If you would like to extend yourself (and potentially attain a mark greater than
 To complete this part, please include the following items in your repository:
 
 1. A Jupyter notebook (.ipynb) containing your training and evaluation work for your chosen classification dataset
-2. A Jupyter notebook A Jupyter notebook (.ipynb) containing your training and evaluation work for your chosen regression dataset
+2. A Jupyter notebook (.ipynb) containing your training and evaluation work for your chosen regression dataset
 3. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
     - Think of this as a TL;DR for your notebooks.
     - While there is no word limit, we may penalise summaries that are more than 500 words long (we have a lot of submissions to get through, so the more concise you can be, the better!), or do not provide a sufficient overview of everything you have done. A key skill to master in data science is your ability to communicate technical concepts in a clear way.
