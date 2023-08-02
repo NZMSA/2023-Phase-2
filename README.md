@@ -7,9 +7,11 @@ Welcome to Phase 2 of the 2023 MSA programme! This year, Phase 2 consists of two
     - Complete this component individually using Phase 1 knowledge + the resources that the MSA team has provided in the folder for each stream
 
 2. Non-Technical
-    - The non-technical component will consist of events such as soft-skills and presentation workshops with MSA team members and/or Microsoft employees + interviews with employers, which will improve and assess your non-technical skills
+    - Students who successfully pass the technical component of Phase 2 will be invited to participate in the non-technical component of Phase 2
+    - The non-technical component will consist of events and workshops on presentation and communication skills with MSA team members and/or Microsoft employees in order to prepare students for interviews with employers who are looking for students with both strong technical and non-technical skills
     - The events above will take place between mid-August and mid-September with placements being confirmed by mid-September, more details will be announced via our [socials](https://linktr.ee/msanz) and via email to all participating students
-    - Some events may be invite-only, in which case invitations will be sent to the highest ranked students across Phase 1 and Phase 2 submissions after they have been marked
+    - Some events, such as interviews with employers, may be invite-only, in which case invitations may only be sent to the highest ranked students across Phase 1 and Phase 2 submissions after they have been marked
+    - Students who do not actively participate in these events and workshops and take steps to improve based on any feedback provided by Microsoft may not be invited to be interviewed by employers
 
 The expected workload for Phase 2 of each stream is 3-4 hours per week and builds upon the knowledge from Phase 1 of each stream. Furthermore, placements will be either in Software Development or Data Science, not both. As such, we recommend that you follow one stream only in order to manage your time effectively and build your knowledge and skills within one stream as much as you can in order to stand out to employers.
 
