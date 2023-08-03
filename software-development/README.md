@@ -7,7 +7,21 @@ Welcome to Phase 2! For software development, we have the following functional r
 
 Otherwise, the goal is simple - to build a fully functional full-stack application that does something awesome. You can talk to the Reddit API (RIP 👻 - that's no longer free), or the Discord API (yay, that's still free), or any third API of your choice to source any additional data you may or may not need.
 
-The submission format will be a ten-minute presentation with your live, deployed application, where you will be marked on the following criteria:
+## Submission
+
+Submission will take place via a submission form, and you will be required to submit:
+
+1. Link/s to your code repository/ies
+
+2. A link to your live, deployed application that the MSA team can access
+
+3. A (maximum) 10-minute presentation (in whatever format you choose, so long as your audio and any screenshares are clear and visible) that you record yourself and share a link to so that the MSA team can watch it. In your video, please:
+  - Describe all the features you implemented
+  - Explain why you implemented those specific features
+  - Explain why you implemented those features in the way that you did
+  - Depending on the complexity of your application and the time available in your presentation, a brief walkthrough of your codebase would also be nice but not mandatory
+
+The three things above will be used to mark your submission on the following criteria:
 - Look and feel of the application UI
 - Responsiveness and UX
 - Authentication/Application security
@@ -15,7 +29,6 @@ The submission format will be a ten-minute presentation with your live, deployed
 - Mobile device compatibility
 - Complexity of the application
 - Cool factor 😎, or how awesome your idea is
-- A walkthrough of your codebase
 
 ## Front-end Application
 ---

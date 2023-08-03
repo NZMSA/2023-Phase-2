@@ -43,7 +43,7 @@ To complete the technical component of Phase 2 and submit evidence of your compl
 1. Ensure that you have:
 - Completed all parts of your chosen stream/s by checking that you have included all items in your repository, as stated in the folder for your chosen stream
     - Software Development
-        - [Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/software-development#:~:text=The%20submission%20format)
+        - [Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/software-development#submission)
     - Data Science
         - [Analysis and Preprocessing Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/1.%20Analysis%20and%20Preprocessing#submission)
         - [Training and Evaluation Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/2.%20Training%20and%20Evaluation#submission)
