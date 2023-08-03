@@ -16,12 +16,11 @@ Submission will take place via a submission form, and you will be required to su
 2. A link to your live, deployed application that the MSA team can access
 
 3. A (maximum) 10-minute presentation (in whatever format you choose, so long as your audio and any screenshares are clear and visible) that you record yourself and share a link to so that the MSA team can watch it. In your video, please:
-  - Describe all the features you implemented
-  - Explain why you implemented those specific features
-  - Explain why you implemented those features in the way that you did
+  - Describe the features you implemented, why you implemented those features, and how you implemented those features (so that the MSA team can see that you actually understand what you built and how it's all put together)
   - Depending on the complexity of your application and the time available in your presentation, a brief walkthrough of your codebase would also be nice but not mandatory
+  - Note: You can submit presentations longer than 10 minutes, but they may be penalised - the time limit is there to assess if students can explain the technical aspects of their work in a clear and concise way to someone like a developer wanting to get an overview of your application in order for them to continue developing it. So aim to present within 10 minutes, as the MSA team will be able to assess the details of your work through the link to the deployed application and your code repository/ies.
 
-The three things above will be used to mark your submission on the following criteria:
+The three submission items above will be used to mark your submission on the following criteria:
 - Look and feel of the application UI
 - Responsiveness and UX
 - Authentication/Application security
@@ -29,6 +28,7 @@ The three things above will be used to mark your submission on the following cri
 - Mobile device compatibility
 - Complexity of the application
 - Cool factor 😎, or how awesome your idea is
+- Extent of use of Microsoft technologies (C#, TypeScript, .NET, Azure etc.)
 
 ## Front-end Application
 ---
