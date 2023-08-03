@@ -50,6 +50,8 @@ To complete the technical component of Phase 2 and submit evidence of your compl
         - [Microsoft Azure Submission Details](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/3.%20Microsoft%20Azure#submission)
 - Made your repository/ies and any other links you want to submit public so that they can be accessed by the MSA team for marking
     - You can check that all your links are publicly accessible by opening them in the Incognito/Private mode of your browser
+    - If you wish to keep your repository/ies private but still provide access to the MSA team for marking, please follow [these instructions](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository#inviting-a-collaborator-to-a-personal-repository) to add the MSA team (username: **msaccelerate**) as a collaborator to your repository and add the repository link/s into the submission form, or upload your code as a .zip file to a cloud storage service and share a link to that in the submission form.
+
 - Included all files needed to run your code inside your repository so that it's easy for the MSA team to mark your submission
 2. Submit this form by 11:59pm, Sunday 6 August: [MSA 2023 Phase 2 Submission](https://forms.office.com/r/XSALRL2AC4)
 
