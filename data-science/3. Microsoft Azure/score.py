@@ -7,9 +7,10 @@ classes = {0: "setosa", 1: "versicolor", 2: "virginica"}
 def init():
     # Loads the model
     global model
-    model_path = "model.pkl"
-    full_model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR"), model_path)
-    model = joblib.load(full_model_path)
+    model_name = "model.pkl"
+    # AZURE_MODEL_DIR is an Azure environment variable where scripts are stored in the cloud and should not be changed
+    model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR"), model_name)
+    model = joblib.load(model_path)
 
 def run(request):
     # Loads the input data, runs the model on it, and returns its predictions
