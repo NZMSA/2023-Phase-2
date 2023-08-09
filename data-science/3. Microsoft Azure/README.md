@@ -16,7 +16,7 @@ This part is smaller since we recognise that you may have spent most of your tim
 
 ## Tasks
 
-1. Read the comments and code in the [example notebook](./example.ipynb) that we have provided for you to practice deploying a model onto Azure, and adapt the code within this notebook for your own work in the next task.
+1. Read the comments and code in the [example notebook](./example.ipynb) that we have provided for you to practice deploying a model onto Azure, and adapt the code within this notebook for your own work in the next task (please use the example notebook in a local environment for your own work and not inside Azure Notebooks in order to avoid errors in model saving or deployment).
 
 2. Go to [Endpoints](https://ml.azure.com/endpoints/realtime) and use the notebook above to create a real-time endpoint for one of your trained models from part 2 - resources:
 
