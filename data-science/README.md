@@ -4,7 +4,7 @@ This year, Phase 2 of the Data Science stream has been split into three parts:
 
 1. [Analysis and Preprocessing](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/1.%20Analysis%20and%20Preprocessing)
 2. [Training and Evaluation](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/2.%20Training%20and%20Evaluation)
-3. [Microsoft Azure](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/3.%20Azure)
+3. [Microsoft Azure](https://github.com/NZMSA/2023-Phase-2/tree/main/data-science/3.%20Microsoft%20Azure)
 
 ## Getting Started
 
