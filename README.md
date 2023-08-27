@@ -94,3 +94,5 @@ Note:
 - If you only use the services within Azure for Students, it will be extremely difficult for you to use up the entire $100 credit, but if your usage results in your credit being depleted to $0, you won't be able to get more credit until your Azure for Students subscription expires, and you'll have to move to [pay as you go](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-9938-cxa).
 
 - MSA is not responsible for and will not refund or cancel any costs you personally incur due to services that you use. You may also refer to [Azure Sponsorships](https://www.microsoftazuresponsorships.com) website to keep track of your Azure for Students subscription usage.
+
+- To delete any resources, please follow the steps listed in [this section of the Azure resources documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resources-portal#delete-resources)
