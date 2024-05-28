@@ -56,10 +56,11 @@ To help you analyse and preprocess your datasets, we have split up EDA and data 
 ### Bonus
 
 If you would like to extend yourself (and potentially attain a mark greater than 100% for this part!), then here are some additional tasks you can do on top of the above. 
-    - Perform any aspect of EDA or preprocessing in Power BI.
-        - This would be most suitable for performing data visualisation.
-    - Use the results of your correlation analysis to select the most relevant features or create new ones.
-        - This is not something that was covered in detail in the Microsoft Learn modules, but we recommend searching online for "feature selection" and "feature engineering".
+
+- Perform any aspect of EDA or preprocessing in Power BI.
+  - This would be most suitable for performing data visualisation.
+- Use the results of your correlation analysis to select the most relevant features or create new ones.
+  - This is not something that was covered in detail in the Microsoft Learn modules, but we recommend searching online for "feature selection" and "feature engineering".
 
 ## Submission
 
