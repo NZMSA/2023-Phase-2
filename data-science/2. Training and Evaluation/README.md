@@ -27,25 +27,26 @@ To help you train and evaluate your models, we have split up training and evalua
 
 ### 2. Choose an algorithm
 
+- Choose an appropriate algorithm for your chosen classification dataset
+    - We suggest that you choose an algorithm you learned in the Microsoft Learn modules from Phase 1, such as random forest or logistic regression
 - Choose an appropriate algorithm for your chosen regression dataset
-
+    - We suggest that you choose an algorithm you learned in the Microsoft Learn modules from Phase 1, such as linear regression
 - In your own words inside your notebook, write a few sentences on how each of your chosen algorithms works
     - We suggest that you research and understand the algorithms that you are using (since they all work differently from each other) so that you can better understand what's involved when training and evaluating a model, and start to gain an intuition for what models would be the best for certain problems and not others.
 
 ### 3. Train and test a model
 
+- Train a model using your chosen classification algorithm on your chosen classification dataset
 - Train a model using your chosen regression algorithm on your chosen regression dataset
-- You have reported the accuracy of your models on the training and test sets
-- You have printed a simple metric for each model's predictions (eg. mean squared error (MSE), RMSE, SMAPE, MAPE, R^2 or etc)
-
-- 
+- Test your trained classification model using the accuracy metric
+- Test your trained regression model using the mean squared error (MSE)
 
 ### 4. Evaluate the model
 
+- Evaluate your trained classification model
+    - Please refer to [Evaluating Classification Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/evaluating-classification-models.md)
 - Evaluate your trained regression model
     - Please refer to [Evaluating Regression Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/evaluating-regression-models.md)
-    - You have have interpreted your SMAPE, MAPE etc. correctly via comments inside your notebook explaining what your specific metrics mean.
-    - You have graphically evaluated the performance of each model by drawing the comparison of the actual sales and predicted sales or otherwise.
 
 ### 5. Summary
 
@@ -53,6 +54,7 @@ To help you train and evaluate your models, we have split up training and evalua
     - The steps you've taken to train and evaluate your models.
     - The results you've found while training and evaluating your models.
     - Any interesting things you found during training and evaluation that you'd like to mention in order to showcase the extent of your understanding. We suggest doing things like:
+        - Find the class that your classification model struggles with the most and explain why you think that is and how it can be fixed (this may involve doing some EDA on your model predictions).
         - Look up the coefficients of your regression model and briefly mention what these coefficients mean.
 
 ### Bonus
@@ -62,7 +64,7 @@ If you would like to extend yourself (and potentially attain a mark greater than
 - Tune your chosen models in at least one way listed in [Tuning Models](https://github.com/NZMSA/2023-Phase-2/blob/main/data-science/0.%20Resources/docs/tuning-models.md) (choose the way/s that you think are most appropriate for your models)
   - If you decide to do this bonus task, quantitatively describe the improvement after tuning using an evaluation metric in your notebook.
 
-- Perform tasks 2-4 on one to two other algorithms for the chosen dataset, compare their performances against each other, and then choose the model with the best performance for task 5. 
+- Perform tasks 2-4 on one to two other algorithms for each dataset, compare their performances against each other, and then choose the model with the best performance for task 5. 
     - There are various other algorithms that you could create other models from that were covered in the Microsoft Learn modules, including:
         - Decision tree
         - K-nearest neighbours
@@ -73,21 +75,16 @@ If you would like to extend yourself (and potentially attain a mark greater than
             - These MSA workshops:
                 - [Video 1](https://www.youtube.com/watch?v=3Bsl2U-23-k)
                 - [Video 2](https://www.youtube.com/watch?v=6I2kU4Y1tAA)
-    - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters.
-    - There are also some other forecasting method that you could create models:
-      - Prophet - for more information, please refer to:
-          - https://facebook.github.io/prophet/docs/quick_start.html
-          - https://github.com/facebook/prophet
-      - ARIMA - for more information, please refer to:
-          - https://otexts.com/fpp3/arima.html 
+    - Feel free to refer to the [Supervised learning section](https://scikit-learn.org/stable/user_guide.html#user-guide) of the Scikit-learn user guide for more information on how to implement the algorithms above and their parameters. 
     - If you decide to do this bonus task, explain what you did and show the performance of each model in your notebook compared to the performance of the model you initially built.
 
 ## Submission
 
 To complete this part, please include the following items in your repository:
 
-1. A Jupyter notebook (.ipynb) containing your training and evaluation work for your chosen regression dataset
-2. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
+1. A Jupyter notebook (.ipynb) containing your training and evaluation work for your chosen classification dataset
+2. A Jupyter notebook (.ipynb) containing your training and evaluation work for your chosen regression dataset
+3. A summary (a Markdown cell in each notebook you create, .txt, .pdf, or in another readable format)
     - Think of this as a TL;DR for your notebooks.
     - While there is no word limit, we may penalise summaries that are more than 500 words long (we have a lot of submissions to get through, so the more concise you can be, the better!), or do not provide a sufficient overview of everything you have done. A key skill to master in data science is your ability to communicate technical concepts in a clear way.
 
@@ -101,15 +98,15 @@ For each task, we will be making sure that you have met the criteria below.
     - You have loaded in and split your datasets from Part 1 appropriately
         - We suggest using a random state of 101 with a 70-30 train-test split (assuming you don't do any tuning as part of the bonus tasks)
 - Choose an algorithm
-    - You have chosen an appropriate algorithm for the dataset
+    - You have chosen an appropriate algorithm for each dataset
 - Train and test a model
     - You have trained and tested your models appropriately
     - You have reported the accuracy of your models on the training and test sets
-    - You have printed a simple metric for each model's predictions and/or drawn a graph for you chosen algorithm
+    - You have printed a simple metric for each model's predictions and/or drawn a graph for linear regression
 - Evaluate the model
-    - You have used evaluation metrics for each model, including (but not limited to) SMAPE, MAPE, R^2, MSE, RMSE
-    - You have have interpreted your SMAPE, MAPE etc. correctly via comments inside your notebook explaining what your specific metrics mean
-    - You have graphically evaluated the performance of each model by drawing the comparison of actual and predict value or otherwise
+    - You have used evaluation metrics for each model, including (but not limited to) confusion matrix, precision, recall, F1-score
+    - You have have interpreted your confusion matrices, F1-scores etc. correctly via comments inside your notebook explaining what your specific metrics mean
+    - You have graphically evaluated the performance of each model using ROC curves or otherwise
 - Summary
     - You have summarised what you have found during training and evaluation
     - You have concisely described the training and evaluation steps you have taken for each of your chosen datasets
@@ -161,8 +158,5 @@ For each task, we will be making sure that you have met the criteria below.
             # Get regression model coefficients
             pd.DataFrame(model.coef_, X.columns, columns = ['Coefficient'])[:-1]
             ```
-
-    - Useful links to study time series forecasting:
-        - https://otexts.com/fpp3/index.html
 
 - More often than not, data scientists need to go back to their training and evaluation steps after realising they need to train or evaluate their data better or in a different way. So don't be afraid to revisit this part after you think you've completed it, and write about any changes you made to your training and evaluation steps in your summary!
